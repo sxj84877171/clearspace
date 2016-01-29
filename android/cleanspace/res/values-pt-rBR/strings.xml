@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="link">Computador conectado anteriormente</string>
+    <string name="developer">Atualizar para a versão do desenvolvedor</string>
+    <string name="committing">Enviando...</string>
+    <string name="nilink">Computadores próximos</string>
+    <string name="commint_success">Enviado com êxito</string>
+    <string name="commint_fail">Falha no envio</string>
+    <string name="about_message">Versão do PhotoMaster:%s</string>
+    <string name="back">Voltar</string>
+    <string name="menu_help">Ajuda e feedback</string>
+    <string name="commit">Enviar</string>
+    <string name="menu_share">Compartilhamento</string>
+    <string name="feelback">Feedback</string>
+    <string name="menu_help_reply_tip">Forneça comentários.</string>
+    <string name="about">Sobre</string>
+    <string name="exist">Sair</string>
+    <string name="freespace_of_phone">Espaço livre:</string>
+    <string name="all_pic_size">Tamanho total:</string>
+    <string name="one_month">Fotos antes de um mês</string>
+    <string name="three_month">Fotos antes de três meses</string>
+    <string name="half_year">Fotos antes de seis meses</string>
+    <string name="one_year">Fotos antes de um ano</string>
+    <string name="gongji">Total</string>
+    <string name="title_activity_clean_photo">Classificar fotos</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_1">Sim e voltar</string>
+    <!-- added %s -->
+    <string name="export_total_info" formatted="false">Total %s(%s)</string>
+    <!-- added %s -->
+    <string name="export_deleted_size">Excluído %s</string>
+    <!-- added %s -->
+    <string name="export_select_delete">Selecionar fotos a serem excluídas (%s selecionada[s]). </string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_2">Outras fotos</string>
+    <string name="all_photo">Todas as fotos</string>
+    <!-- added %s -->
+    <string name="export_deleted_count" formatted="false">Excluídas %s, total %s</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_3">Excluído</string>
+    <!-- 有%s -->
+    <string name="arrange_delete_button_1">Excluir(%1$s)</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_4">Parar</string>
+    <string name="doing">Processando:</string>
+    <string name="share_for_friends">Compartilhar com os amigos</string>
+    <!-- 添加了网址 -->
+    <string name="share">Tem muitas fotos, mas não tem espaço suficiente? O PhotoMaster resolve seu problema com um simples toque. Clique para fazer o download. http://thelinkit.com/photoclean/update/cleanspace.apk</string>
+    <string name="outpic2pc">Selecionar o computador</string>
+    <string name="start">Iniciar</string>
+    <string name="cancle">Cancelar</string>
+    <string name="ok">Concluída</string>
+    <string name="Dwpic">foto(s)</string>
+    <string name="exportsize">Exportar para mim</string>
+    <string name="export">Exportar</string>
+    <string name="fast_move">PhotoShifter, o criador de espaço mais eficiente.</string>
+    <string name="findyourpc">Pesquisando seu computador</string>
+    <string name="deal_pic_done">Concluída</string>
+
+    <!-- 没用的 no_use_todo_delete_6 剩余空间 用于组合clear_title_cur_exported_ (Photos exported this time:%1$s,Free space:%2$s) -->
+    <string name="no_use_todo_delete_5">Fotos exportadas:</string>
+    <string name="no_use_todo_delete_6">Espaço livre:</string>
+    <string name="exportLocation_1">Local das fotos exportadas:</string>
+    <string name="last_finishTime">Horário da última exportação:</string>
+    <!-- 加了括号 -->
+    <string name="offline">(Offline)</string>
+    <string name="cast">Falha na conexão</string>
+    <string name="casterror">Falha na conexão</string>
+    <string name="device_offline">Dispositivo offline</string>
+    <string name="connect">Conectando</string>
+    <string name="has_export">Exportadas</string>
+    <string name="xphone_download_title">Atualizar o PhotoShifter</string>
+    <string name="xphone_download_desc1">Baixado com êxito. Inicie a instalação.</string>
+    <string name="xphone_download_desc2">Falha no download. Tente novamente.</string>
+    <string name="xphone_download_toast">Iniciar o download</string>
+    <string name="s_smart_mention">Lembrar</string>
+    <string name="s_smart_confirm">Ok</string>
+    <string name="s_update_version_match">Já é a versão mais recente</string>
+    <string name="s_update_get_server_information_failed">Falha ao recuperar informações de atualização</string>
+    <string name="s_update_sd_card_unavailable">Cartão SD inválido</string>
+    <!-- New version 添加到:dialog_newV -->
+    <string name="s_update_title">Nova versão</string>
+    <string name="retry">Tentar Novamente</string>
+    <string name="unsave">Esquecer</string>
+    <string name="look_and_delete">Mostrar e excluir</string>
+    <string name="delete_export">Excluir fotos exportadas</string>
+    <!-- added , 这个是乱码?xito na exporta??o, -->
+    <string name="export_done">Êxito na exportação,</string>
+    <string name="confirm_delete">Tem certeza de que deseja excluir?</string>
+    <string name="continue_delete">Continuar para excluir</string>
+    <!-- 有%s -->
+    <string name="delete">Excluindo... %s restante(s)</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_7">Classificar fotos</string>
+    <string name="no_img_found">Não localizado</string>
+    <!-- added %s -->
+    <string name="clean_and_size">Apagar(%1$s)</string>
+    <string name="choose_photo_to_be_cleaned">Selecionar fotos a serem apagadas</string>
+    <string name="exported_but_nocleaned">Fotos exportadas não excluídas</string>
+    <!-- 有%s -->
+    <string name="photo_clean_number">Total %s</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_8">Fotos exportadas, mas não excluídas</string>
+    <string name="clear_title_cur_exported">Fotos exportadas agora</string>
+    <string name="clear_tip">Você pode excluir estas fotos aqui</string>
+    <string name="login_fail">Falha ao iniciar sessão</string>
+    <!-- 有%s -->
+    <string name="clear_message">%s selecionada(s). </string>
+    <string name="clear_check_text">Selecionar Tudo</string>
+    <string name="clear_sort_item1">Em ordem crescente de tempo</string>
+    <string name="clear_sort_item2">Em ordem decrescente de tempo</string>
+    <string name="clear_sort_item3">Em ordem decrescente de tamanho</string>
+    <string name="clear_sort_item4">Em ordem crescente de tamanho</string>
+    <!-- added %s -->
+    <string name="clear_delete_btn">Excluir(%s)</string>
+    <!-- added %s -->
+    <string name="clear_deleteing" formatted="false">Excluindo %s, total %s</string>
+    <!-- 删除了:  Tap and hold for larger view -->
+    <string name="clear_need_select_message">Selecionar fotos a serem excluídas. </string>
+    <string name="export_title">Fotos exportadas não excluídas</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_9">Total</string>
+    <string name="no_use_todo_delete_10">Excluído</string>
+    <string name="export_similar_finding">Pesquisando fotos semelhantes</string>
+    <string name="export_similar_message">Fotos semelhantes</string>
+    <string name="export_no_similar_photo">Fotos semelhantes não encontradas</string>
+    <string name="export_album_photo_message">Fotos de álbuns</string>
+    <string name="export_analyze_message">Analisando fotos</string>
+    <!-- 删除了:  Tap and hold for larger view -->
+    <string name="export_analyze_finish">Análise concluída. Toque para selecionar fotos a serem excluídas. </string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_11">Excluído</string>
+    <!-- 有%s, 删除了:  Tap and hold for larger view -->
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_12">Excluídas, total</string>
+    <string name="export_delete_finish">Todas as fotos foram excluídas</string>
+    <string name="alert_delete_title">Tem certeza de que deseja excluir todas estas fotos do armazenamento local?</string>
+    <string name="alert_delete_message">Estas fotos foram exportadas para:</string>
+    <!-- 增加了\ -->
+    <string name="alert_export_location">%s Desktop\\PhotoShifter\\</string>
+    <!-- 增加了\n -->
+    <string name="alert_delete_all_delete">%s grupos de fotos semelhantes serão excluídos. \nContinuar?</string>
+    <string name="conn_fail">Ocorreu um erro na conexão. Deseja classificar as fotos localmente?</string>
+    <string name="conn_fail_help_me">OK, continuar.</string>
+    <string name="clean_notification_desc">Tem muitas fotos, mas não tem espaço suficiente? O PhotoMaster resolve seu problema com um simples toque.</string>
+    <string name="scan_2">Endereço para o download:</string>
+    <string name="scan_5">Rede atual do seu telefone</string>
+    <string name="s1">Executar o PhotoShifter no seu PC</string>
+    <string name="s2">Certifique-se de que seu PC e telefone estejam na mesma rede.</string>
+
+    <!-- 数组 -->
+    <string-array name="datasGrade">
+        <item>Todas as fotos</item>
+        <item>1 mês atrás</item>
+        <item>3 meses atrás</item>
+        <item>6 meses atrás</item>
+        <item>1 ano atrás</item>
+    </string-array>
+
+    <string name="clean_notification_desc4">Tem muitas fotos, mas não tem espaço suficiente? Use o PhotoMaster para livrar espaço no seu telefone.</string>
+    <string name="clean_notification_desc2">Exportando: %s</string>
+    <string name="clean_notification_desc3">Concluída</string>
+    <!-- 没用的 -->
+    <string name="no_use_todo_delete_13">Não tem espaço suficiente? Use o PhotoMaster para livrar espaço no seu telefone.</string>
+    <string name="notfound">Não foi possível localizar seu PC?</string>
+    <string name="finish_cur_speed">Velocidade média:</string>
+
+    <!-- added &#160; -->
+    <string name="finish_export_total">Número total de exportações:</string>
+    <string name="finish_export_total_rank">Avaliado mundialmente:</string>
+    <string name="finish_export_total_size">Tamanho total exportado:</string>
+
+    <!-- 没用到的 本次导出 用于组合 clear_title_cur_exported_ (Photos exported this time:%1$s,Free space:%2$s) -->
+    <string name="no_use_todo_delete_14">Número exportado agora:</string>
+    <string name="one_drive_login_desc">Faça login para carregar fotos na nuvem.</string>
+    <string name="drive_login_button">Entrar</string>
+    <string name="drive_logout_button">Sair</string>
+    <!-- 有%s -->
+    <string name="drive_login">%s conectado</string>
+    <string name="one_drive_login_desc_2">Expirado. Faça login novamente.</string>
+
+    <!-- 没用到的 -->
+    <string name="no_use_todo_delete_15">O iOS apaga as fotos excluídas depois de 30 dias. Se você deseja liberar espaço agora, abra Álbuns e apague todas as fotos em "Apagado Há Pouco".</string>
+    <string name="no_use_todo_delete_16">%@ deseja ter acesso às suas fotos.</string>
+
+    <!-- 需要组合的有%s -->
+    <string name="clear_title_cur_exported_">Número exportado agora:%1$s,Espaço livre:%2$s</string>
+
+    <!-- 下面的没有翻译 (更新) -->
+    <string name="dialog_update">Atualizar</string>
+    <string name="dialog_newV">Nova versão</string>
+    <string name="finish_des_chijiao">You beat %1$s of global users %2$s.</string>
+    <string name="finish_des_moca">You beat %1$s of global users %2$s.</string>
+    <string name="finish_des_yongjiu">You beat %1$s of global users %2$s.</string>
+    <string name="finish_des_yadong">You beat %1$s of global users %2$s.</string>
+    <string name="finish_des_sangtana">You beat %1$s of global users %2$s.</string>
+    <string name="finish_des_boying">You beat %1$s of global users %2$s.</string>
+
+    <!-- *下面不需要翻译 -->
+    <string name="app_name">PhotoShifter</string>
+    <string name="location">Bob-W701 DeskTop\\CleanSpace\\</string>
+    <string name="exported_name">Tim-tomorrow</string>
+    <string name="example_1">0.0</string>
+    <string name="example_2">0</string>
+    <string name="scan_6">dworkstudio.com</string>
+    <string name="zGBite">0.5GB</string>
+    <string name="oneGBite">1.0GB</string>
+    <string name="towGBite">2.0GB</string>
+    <string name="fourGBite">4.0GB</string>
+    <string name="eightGBite">8.0GB</string>
+    <string name="Dwsize_kb">KB</string>
+    <string name="Dwsize_mb">MB</string>
+    <string name="Dwsize">GB</string>
+    <string name="Dwsize_kb_speed">KB/S</string>
+    <string name="Dwsize_mb_speed">MB/S</string>
+    <string name="Dwsize_b_speed">B/S</string>
+    <string name="export_size">已腾空间</string>
+    <string name="desc">描述</string>
+    <string name="v">v%s</string>
+    <string name="developer_close">Debug mode closed</string>
+    <string name="developer_open">Debug mode opened</string>
+    <string name="xie_gang">/</string>
+    <string name="finish_name_chijiao">\ </string>
+    <string name="finish_name_moca">\ </string>
+    <string name="finish_name_yongjiu">\ </string>
+    <string name="finish_name_yadong">\ </string>
+    <string name="finish_name_sangta">\ </string>
+    <string name="finish_name_xialipu">\ </string>
+    <string name="finish_name_falali">\ </string>
+    <string name="finish_name_boying">\ </string>
+    <string name="finish_name_changzheng">\ </string>
+    <string name="finish_name_yuzhou">\ </string>
+
+</resources>

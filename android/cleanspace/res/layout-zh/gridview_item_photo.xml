@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="3dp"
+        android:paddingLeft="4dp"
+        android:gravity="left"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/export_computer"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/icon_small_computer"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/export_yun"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/icon_small_onedrive"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,523 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json linkit@0.1.3 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'C:\\data\\clearspace\\trunk\\server',
+7 verbose install   [ 'express',
+7 verbose install     'serve-static',
+7 verbose install     'morgan',
+7 verbose install     'body-parser',
+7 verbose install     'ws',
+7 verbose install     'validator',
+7 verbose install     'merge',
+7 verbose install     'mysql',
+7 verbose install     'log4js',
+7 verbose install     'sync',
+7 verbose install     'formidable',
+7 verbose install     'twilio',
+7 verbose install     'xmldom',
+7 verbose install     'xpath.js' ] ]
+8 info preinstall linkit@0.1.3
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping express@* C:\data\clearspace\trunk\server
+11 verbose already installed skipping serve-static@* C:\data\clearspace\trunk\server
+12 verbose already installed skipping morgan@* C:\data\clearspace\trunk\server
+13 verbose already installed skipping body-parser@* C:\data\clearspace\trunk\server
+14 verbose already installed skipping ws@* C:\data\clearspace\trunk\server
+15 verbose already installed skipping validator@* C:\data\clearspace\trunk\server
+16 verbose already installed skipping merge@* C:\data\clearspace\trunk\server
+17 verbose already installed skipping mysql@* C:\data\clearspace\trunk\server
+18 verbose already installed skipping log4js@0.6.6 C:\data\clearspace\trunk\server
+19 verbose cache add [ 'sync@*', null ]
+20 verbose cache add name=undefined spec="sync@*" args=["sync@*",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'sync@*',
+21 verbose parsed url   path: 'sync@*',
+21 verbose parsed url   href: 'sync@*' }
+22 verbose already installed skipping formidable@* C:\data\clearspace\trunk\server
+23 verbose already installed skipping twilio@* C:\data\clearspace\trunk\server
+24 verbose already installed skipping xmldom@* C:\data\clearspace\trunk\server
+25 verbose already installed skipping xpath.js@* C:\data\clearspace\trunk\server
+26 verbose cache add name="sync" spec="*" args=["sync","*"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '*',
+27 verbose parsed url   path: '*',
+27 verbose parsed url   href: '*' }
+28 verbose addNamed [ 'sync', '*' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile 140cff38-sync sync@*
+31 verbose lock sync@* C:\Users\Administrator\AppData\Roaming\npm-cache\140cff38-sync.lock
+32 silly addNameRange { name: 'sync', range: '*', hasData: false }
+33 verbose request where is /sync
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id dc8011e71b70219f
+36 verbose url raw /sync
+37 verbose url resolving [ 'https://registry.npmjs.org/', './sync' ]
+38 verbose url resolved https://registry.npmjs.org/sync
+39 verbose request where is https://registry.npmjs.org/sync
+40 info trying registry request attempt 1 at 13:35:21
+41 verbose etag "93D4GGPBWDKJITD8D7QB9G1L2"
+42 http GET https://registry.npmjs.org/sync
+43 http 304 https://registry.npmjs.org/sync
+44 silly registry.get cb [ 304,
+44 silly registry.get   { date: 'Fri, 11 Sep 2015 05:35:21 GMT',
+44 silly registry.get     via: '1.1 varnish',
+44 silly registry.get     'cache-control': 'max-age=60',
+44 silly registry.get     etag: '"93D4GGPBWDKJITD8D7QB9G1L2"',
+44 silly registry.get     age: '49',
+44 silly registry.get     connection: 'keep-alive',
+44 silly registry.get     'x-served-by': 'cache-nrt6124-NRT',
+44 silly registry.get     'x-cache': 'HIT',
+44 silly registry.get     'x-cache-hits': '1',
+44 silly registry.get     'x-timer': 'S1441949721.479024,VS0,VE0',
+44 silly registry.get     vary: 'Accept' } ]
+45 verbose etag https://registry.npmjs.org/sync from cache
+46 silly addNameRange number 2 { name: 'sync', range: '*', hasData: true }
+47 silly addNameRange versions [ 'sync',
+47 silly addNameRange   [ '0.0.1',
+47 silly addNameRange     '0.1.0',
+47 silly addNameRange     '0.1.1',
+47 silly addNameRange     '0.1.3',
+47 silly addNameRange     '0.1.4',
+47 silly addNameRange     '0.1.5',
+47 silly addNameRange     '0.1.6',
+47 silly addNameRange     '0.1.7',
+47 silly addNameRange     '0.1.8',
+47 silly addNameRange     '0.2.0',
+47 silly addNameRange     '0.2.1',
+47 silly addNameRange     '0.2.2',
+47 silly addNameRange     '0.2.3',
+47 silly addNameRange     '0.2.4',
+47 silly addNameRange     '0.2.5',
+47 silly addNameRange     '0.1.9-beta',
+47 silly addNameRange     '0.1.9-beta2',
+47 silly addNameRange     '0.1.9-beta3' ] ]
+48 verbose addNamed [ 'sync', '0.2.5' ]
+49 verbose addNamed [ '0.2.5', '0.2.5' ]
+50 silly lockFile 0dc972be-sync-0-2-5 sync@0.2.5
+51 verbose lock sync@0.2.5 C:\Users\Administrator\AppData\Roaming\npm-cache\0dc972be-sync-0-2-5.lock
+52 silly lockFile 0dc972be-sync-0-2-5 sync@0.2.5
+53 silly lockFile 0dc972be-sync-0-2-5 sync@0.2.5
+54 silly lockFile 140cff38-sync sync@*
+55 silly lockFile 140cff38-sync sync@*
+56 silly resolved [ { name: 'sync',
+56 silly resolved     description: 'Library that makes simple to run asynchronous functions in synchronous manner, using node-fibers.',
+56 silly resolved     version: '0.2.5',
+56 silly resolved     url: 'http://github.com/0ctave/node-sync',
+56 silly resolved     author: { name: 'Yuriy Bogdanov', email: 'chinsay@gmail.com' },
+56 silly resolved     main: 'lib/sync',
+56 silly resolved     license: 'MIT',
+56 silly resolved     repository:
+56 silly resolved      { type: 'git',
+56 silly resolved        url: 'https://github.com/ybogdanov/node-sync.git' },
+56 silly resolved     engines: { node: '>=0.5.2' },
+56 silly resolved     dependencies: { fibers: '>=0.6' },
+56 silly resolved     bugs: { url: 'https://github.com/ybogdanov/node-sync/issues' },
+56 silly resolved     homepage: 'https://github.com/ybogdanov/node-sync',
+56 silly resolved     _id: 'sync@0.2.5',
+56 silly resolved     dist:
+56 silly resolved      { shasum: '3910bb9b66abee56542e2e70f0ce549031252df6',
+56 silly resolved        tarball: 'http://registry.npmjs.org/sync/-/sync-0.2.5.tgz' },
+56 silly resolved     _from: 'sync@*',
+56 silly resolved     _npmVersion: '1.4.3',
+56 silly resolved     _npmUser: { name: 'octave', email: 'chinsay@gmail.com' },
+56 silly resolved     maintainers: [ [Object] ],
+56 silly resolved     directories: {},
+56 silly resolved     _shasum: '3910bb9b66abee56542e2e70f0ce549031252df6',
+56 silly resolved     _resolved: 'https://registry.npmjs.org/sync/-/sync-0.2.5.tgz',
+56 silly resolved     readme: 'ERROR: No README data found!' } ]
+57 info install sync@0.2.5 into C:\data\clearspace\trunk\server
+58 info installOne sync@0.2.5
+59 verbose node_modules\sync unbuild
+60 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\sync\0.2.5\package.tgz
+61 silly lockFile b8f7000e-e-trunk-server-node-modules-sync tar://C:\data\clearspace\trunk\server\node_modules\sync
+62 verbose lock tar://C:\data\clearspace\trunk\server\node_modules\sync C:\Users\Administrator\AppData\Roaming\npm-cache\b8f7000e-e-trunk-server-node-modules-sync.lock
+63 silly lockFile d2ebcd12-npm-cache-sync-0-2-5-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\sync\0.2.5\package.tgz
+64 verbose lock tar://C:\Users\Administrator\AppData\Roaming\npm-cache\sync\0.2.5\package.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\d2ebcd12-npm-cache-sync-0-2-5-package-tgz.lock
+65 silly gunzTarPerm modes [ '777', '666' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+68 silly gunzTarPerm extractEntry .npmignore
+69 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+72 silly gunzTarPerm extractEntry LICENSE
+73 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+74 silly gunzTarPerm extractEntry benchmarks/index.js
+75 silly gunzTarPerm modified mode [ 'benchmarks/index.js', 420, 438 ]
+76 silly gunzTarPerm extractEntry examples/async.js
+77 silly gunzTarPerm modified mode [ 'examples/async.js', 420, 438 ]
+78 silly gunzTarPerm extractEntry examples/exceptions.js
+79 silly gunzTarPerm modified mode [ 'examples/exceptions.js', 420, 438 ]
+80 silly gunzTarPerm extractEntry examples/express.js
+81 silly gunzTarPerm modified mode [ 'examples/express.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry examples/fiber.js
+83 silly gunzTarPerm modified mode [ 'examples/fiber.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry examples/future.js
+85 silly gunzTarPerm modified mode [ 'examples/future.js', 420, 438 ]
+86 silly gunzTarPerm extractEntry examples/blocking.js
+87 silly gunzTarPerm modified mode [ 'examples/blocking.js', 420, 438 ]
+88 silly gunzTarPerm extractEntry examples/repl.js
+89 silly gunzTarPerm modified mode [ 'examples/repl.js', 420, 438 ]
+90 silly gunzTarPerm extractEntry examples/scope.js
+91 silly gunzTarPerm modified mode [ 'examples/scope.js', 420, 438 ]
+92 silly gunzTarPerm extractEntry examples/simple.js
+93 silly gunzTarPerm modified mode [ 'examples/simple.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry examples/simple2.js
+95 silly gunzTarPerm modified mode [ 'examples/simple2.js', 420, 438 ]
+96 silly gunzTarPerm extractEntry examples/vars.js
+97 silly gunzTarPerm modified mode [ 'examples/vars.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry examples/object.js
+99 silly gunzTarPerm modified mode [ 'examples/object.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry lib/sync.js
+101 silly gunzTarPerm modified mode [ 'lib/sync.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry test/async.js
+103 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry test/fiber.js
+105 silly gunzTarPerm modified mode [ 'test/fiber.js', 420, 438 ]
+106 silly gunzTarPerm extractEntry test/future.js
+107 silly gunzTarPerm modified mode [ 'test/future.js', 420, 438 ]
+108 silly gunzTarPerm extractEntry test/index.js
+109 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+110 silly gunzTarPerm extractEntry test/sleep.js
+111 silly gunzTarPerm modified mode [ 'test/sleep.js', 420, 438 ]
+112 silly gunzTarPerm extractEntry test/sync.js
+113 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+114 silly lockFile b8f7000e-e-trunk-server-node-modules-sync tar://C:\data\clearspace\trunk\server\node_modules\sync
+115 silly lockFile b8f7000e-e-trunk-server-node-modules-sync tar://C:\data\clearspace\trunk\server\node_modules\sync
+116 silly lockFile d2ebcd12-npm-cache-sync-0-2-5-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\sync\0.2.5\package.tgz
+117 silly lockFile d2ebcd12-npm-cache-sync-0-2-5-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\sync\0.2.5\package.tgz
+118 info preinstall sync@0.2.5
+119 verbose readDependencies using package.json deps
+120 verbose readDependencies using package.json deps
+121 verbose cache add [ 'fibers@>=0.6', null ]
+122 verbose cache add name=undefined spec="fibers@>=0.6" args=["fibers@>=0.6",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'fibers@%3E=0.6',
+123 verbose parsed url   path: 'fibers@%3E=0.6',
+123 verbose parsed url   href: 'fibers@%3E=0.6' }
+124 verbose cache add name="fibers" spec=">=0.6" args=["fibers",">=0.6"]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: '%3E=0.6',
+125 verbose parsed url   path: '%3E=0.6',
+125 verbose parsed url   href: '%3E=0.6' }
+126 verbose addNamed [ 'fibers', '>=0.6' ]
+127 verbose addNamed [ null, '>=0.6.0-0' ]
+128 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+129 verbose lock fibers@>=0.6 C:\Users\Administrator\AppData\Roaming\npm-cache\40f23d42-fibers-0-6.lock
+130 silly addNameRange { name: 'fibers', range: '>=0.6.0-0', hasData: false }
+131 verbose request where is /fibers
+132 verbose request registry https://registry.npmjs.org/
+133 verbose url raw /fibers
+134 verbose url resolving [ 'https://registry.npmjs.org/', './fibers' ]
+135 verbose url resolved https://registry.npmjs.org/fibers
+136 verbose request where is https://registry.npmjs.org/fibers
+137 info trying registry request attempt 1 at 13:35:21
+138 verbose etag "5I34YH0PSH5IR7IY8RFI85C45"
+139 http GET https://registry.npmjs.org/fibers
+140 http 304 https://registry.npmjs.org/fibers
+141 silly registry.get cb [ 304,
+141 silly registry.get   { date: 'Fri, 11 Sep 2015 05:35:21 GMT',
+141 silly registry.get     via: '1.1 varnish',
+141 silly registry.get     'cache-control': 'max-age=60',
+141 silly registry.get     etag: '"5I34YH0PSH5IR7IY8RFI85C45"',
+141 silly registry.get     age: '45',
+141 silly registry.get     connection: 'keep-alive',
+141 silly registry.get     'x-served-by': 'cache-nrt6132-NRT',
+141 silly registry.get     'x-cache': 'HIT',
+141 silly registry.get     'x-cache-hits': '1',
+141 silly registry.get     'x-timer': 'S1441949721.878822,VS0,VE0',
+141 silly registry.get     vary: 'Accept' } ]
+142 verbose etag https://registry.npmjs.org/fibers from cache
+143 silly addNameRange number 2 { name: 'fibers', range: '>=0.6.0-0', hasData: true }
+144 silly addNameRange versions [ 'fibers',
+144 silly addNameRange   [ '0.1.0',
+144 silly addNameRange     '0.1.1',
+144 silly addNameRange     '0.1.2',
+144 silly addNameRange     '0.1.3',
+144 silly addNameRange     '0.1.4',
+144 silly addNameRange     '0.1.6',
+144 silly addNameRange     '0.1.7',
+144 silly addNameRange     '0.1.8',
+144 silly addNameRange     '0.2.0',
+144 silly addNameRange     '0.2.1',
+144 silly addNameRange     '0.2.2',
+144 silly addNameRange     '0.2.3',
+144 silly addNameRange     '0.2.4',
+144 silly addNameRange     '0.2.5',
+144 silly addNameRange     '0.2.6',
+144 silly addNameRange     '0.5.0',
+144 silly addNameRange     '0.6.0',
+144 silly addNameRange     '0.5.1',
+144 silly addNameRange     '0.6.1',
+144 silly addNameRange     '0.6.2',
+144 silly addNameRange     '0.6.3',
+144 silly addNameRange     '0.6.4',
+144 silly addNameRange     '0.6.5',
+144 silly addNameRange     '0.6.6',
+144 silly addNameRange     '0.6.7',
+144 silly addNameRange     '0.6.8',
+144 silly addNameRange     '0.6.9',
+144 silly addNameRange     '1.0.0',
+144 silly addNameRange     '1.0.1',
+144 silly addNameRange     '1.0.2',
+144 silly addNameRange     '1.0.4',
+144 silly addNameRange     '1.0.5',
+144 silly addNameRange     '1.0.6' ] ]
+145 verbose addNamed [ 'fibers', '1.0.6' ]
+146 verbose addNamed [ '1.0.6', '1.0.6' ]
+147 silly lockFile c35080b5-fibers-1-0-6 fibers@1.0.6
+148 verbose lock fibers@1.0.6 C:\Users\Administrator\AppData\Roaming\npm-cache\c35080b5-fibers-1-0-6.lock
+149 silly lockFile c35080b5-fibers-1-0-6 fibers@1.0.6
+150 silly lockFile c35080b5-fibers-1-0-6 fibers@1.0.6
+151 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+152 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+153 silly resolved [ { name: 'fibers',
+153 silly resolved     version: '1.0.6',
+153 silly resolved     description: 'Cooperative multi-tasking for Javascript',
+153 silly resolved     keywords:
+153 silly resolved      [ 'fiber',
+153 silly resolved        'fibers',
+153 silly resolved        'coroutine',
+153 silly resolved        'thread',
+153 silly resolved        'async',
+153 silly resolved        'parallel',
+153 silly resolved        'worker',
+153 silly resolved        'future',
+153 silly resolved        'promise' ],
+153 silly resolved     homepage: 'https://github.com/laverdet/node-fibers',
+153 silly resolved     author:
+153 silly resolved      { name: 'Marcel Laverdet',
+153 silly resolved        email: 'marcel@laverdet.com',
+153 silly resolved        url: 'https://github.com/laverdet/' },
+153 silly resolved     main: 'fibers',
+153 silly resolved     scripts:
+153 silly resolved      { install: 'node build.js || nodejs build.js',
+153 silly resolved        test: 'node test.js || nodejs test.js' },
+153 silly resolved     repository:
+153 silly resolved      { type: 'git',
+153 silly resolved        url: 'git://github.com/laverdet/node-fibers.git' },
+153 silly resolved     license: 'MIT',
+153 silly resolved     engines: { node: '>=0.5.2' },
+153 silly resolved     gitHead: '8c591087fcc5768d209ff8a30979c9257503d13f',
+153 silly resolved     bugs: { url: 'https://github.com/laverdet/node-fibers/issues' },
+153 silly resolved     _id: 'fibers@1.0.6',
+153 silly resolved     _shasum: '4c1f914ec794375417d547710a5bf9e7ff4421e9',
+153 silly resolved     _from: 'fibers@>=0.6',
+153 silly resolved     _npmVersion: '2.10.1',
+153 silly resolved     _nodeVersion: '0.12.4',
+153 silly resolved     _npmUser: { name: 'laverdet', email: 'marcel.npm@laverdet.com' },
+153 silly resolved     maintainers: [ [Object] ],
+153 silly resolved     dist:
+153 silly resolved      { shasum: '4c1f914ec794375417d547710a5bf9e7ff4421e9',
+153 silly resolved        tarball: 'http://registry.npmjs.org/fibers/-/fibers-1.0.6.tgz' },
+153 silly resolved     directories: {},
+153 silly resolved     _resolved: 'https://registry.npmjs.org/fibers/-/fibers-1.0.6.tgz',
+153 silly resolved     readme: 'ERROR: No README data found!' } ]
+154 info install fibers@1.0.6 into C:\data\clearspace\trunk\server\node_modules\sync
+155 info installOne fibers@1.0.6
+156 verbose node_modules\sync\node_modules\fibers unbuild
+157 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\fibers\1.0.6\package.tgz
+158 silly lockFile 44cf2e22-modules-sync-node-modules-fibers tar://C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers
+159 verbose lock tar://C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers C:\Users\Administrator\AppData\Roaming\npm-cache\44cf2e22-modules-sync-node-modules-fibers.lock
+160 silly lockFile 8e1d7059-m-cache-fibers-1-0-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\fibers\1.0.6\package.tgz
+161 verbose lock tar://C:\Users\Administrator\AppData\Roaming\npm-cache\fibers\1.0.6\package.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\8e1d7059-m-cache-fibers-1-0-6-package-tgz.lock
+162 silly gunzTarPerm modes [ '777', '666' ]
+163 silly gunzTarPerm extractEntry package.json
+164 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+165 silly gunzTarPerm extractEntry .npmignore
+166 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+167 silly gunzTarPerm extractEntry README.md
+168 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+169 silly gunzTarPerm extractEntry LICENSE
+170 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+171 silly gunzTarPerm extractEntry quick-test.js
+172 silly gunzTarPerm modified mode [ 'quick-test.js', 420, 438 ]
+173 silly gunzTarPerm extractEntry future.js
+174 silly gunzTarPerm modified mode [ 'future.js', 420, 438 ]
+175 silly gunzTarPerm extractEntry build.js
+176 silly gunzTarPerm modified mode [ 'build.js', 493, 511 ]
+177 silly gunzTarPerm extractEntry test.js
+178 silly gunzTarPerm modified mode [ 'test.js', 493, 511 ]
+179 silly gunzTarPerm extractEntry fibers.js
+180 silly gunzTarPerm modified mode [ 'fibers.js', 420, 438 ]
+181 silly gunzTarPerm extractEntry binding.gyp
+182 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+183 silly gunzTarPerm extractEntry bin/.npmignore
+184 silly gunzTarPerm modified mode [ 'bin/.npmignore', 420, 438 ]
+185 silly gunzTarPerm extractEntry bin/win32-x64-v8-4.2/fibers.node
+186 silly gunzTarPerm modified mode [ 'bin/win32-x64-v8-4.2/fibers.node', 420, 438 ]
+187 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-3.28/fibers.node
+188 silly gunzTarPerm modified mode [ 'bin/darwin-ia32-v8-3.28/fibers.node', 493, 511 ]
+189 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-4.2/fibers.node
+190 silly gunzTarPerm modified mode [ 'bin/darwin-ia32-v8-4.2/fibers.node', 493, 511 ]
+191 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.14/fibers.node
+192 silly gunzTarPerm modified mode [ 'bin/darwin-x64-v8-3.14/fibers.node', 493, 511 ]
+193 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.28/fibers.node
+194 silly gunzTarPerm modified mode [ 'bin/darwin-x64-v8-3.28/fibers.node', 493, 511 ]
+195 silly gunzTarPerm extractEntry bin/darwin-x64-v8-4.2/fibers.node
+196 silly gunzTarPerm modified mode [ 'bin/darwin-x64-v8-4.2/fibers.node', 493, 511 ]
+197 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.14/fibers.node
+198 silly gunzTarPerm modified mode [ 'bin/linux-ia32-v8-3.14/fibers.node', 493, 511 ]
+199 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.28/fibers.node
+200 silly gunzTarPerm modified mode [ 'bin/linux-ia32-v8-3.28/fibers.node', 493, 511 ]
+201 silly gunzTarPerm extractEntry bin/linux-ia32-v8-4.2/fibers.node
+202 silly gunzTarPerm modified mode [ 'bin/linux-ia32-v8-4.2/fibers.node', 493, 511 ]
+203 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-3.14/fibers.node
+204 silly gunzTarPerm modified mode [ 'bin/darwin-ia32-v8-3.14/fibers.node', 493, 511 ]
+205 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.28/fibers.node
+206 silly gunzTarPerm modified mode [ 'bin/linux-x64-v8-3.28/fibers.node', 493, 511 ]
+207 silly gunzTarPerm extractEntry bin/linux-x64-v8-4.2/fibers.node
+208 silly gunzTarPerm modified mode [ 'bin/linux-x64-v8-4.2/fibers.node', 493, 511 ]
+209 silly gunzTarPerm extractEntry bin/repl
+210 silly gunzTarPerm modified mode [ 'bin/repl', 493, 511 ]
+211 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.14/fibers.node
+212 silly gunzTarPerm modified mode [ 'bin/win32-ia32-v8-3.14/fibers.node', 420, 438 ]
+213 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.28/fibers.node
+214 silly gunzTarPerm modified mode [ 'bin/win32-ia32-v8-3.28/fibers.node', 420, 438 ]
+215 silly gunzTarPerm extractEntry bin/win32-ia32-v8-4.2/fibers.node
+216 silly gunzTarPerm modified mode [ 'bin/win32-ia32-v8-4.2/fibers.node', 420, 438 ]
+217 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.14/fibers.node
+218 silly gunzTarPerm modified mode [ 'bin/win32-x64-v8-3.14/fibers.node', 420, 438 ]
+219 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.28/fibers.node
+220 silly gunzTarPerm modified mode [ 'bin/win32-x64-v8-3.28/fibers.node', 420, 438 ]
+221 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.14/fibers.node
+222 silly gunzTarPerm modified mode [ 'bin/linux-x64-v8-3.14/fibers.node', 493, 511 ]
+223 silly gunzTarPerm extractEntry src/coroutine.cc
+224 silly gunzTarPerm modified mode [ 'src/coroutine.cc', 420, 438 ]
+225 silly gunzTarPerm extractEntry src/coroutine.h
+226 silly gunzTarPerm modified mode [ 'src/coroutine.h', 420, 438 ]
+227 silly gunzTarPerm extractEntry src/fibers.cc
+228 silly gunzTarPerm modified mode [ 'src/fibers.cc', 420, 438 ]
+229 silly gunzTarPerm extractEntry src/libcoro/README
+230 silly gunzTarPerm modified mode [ 'src/libcoro/README', 420, 438 ]
+231 silly gunzTarPerm extractEntry src/libcoro/LICENSE
+232 silly gunzTarPerm modified mode [ 'src/libcoro/LICENSE', 420, 438 ]
+233 silly gunzTarPerm extractEntry src/libcoro/conftest.c
+234 silly gunzTarPerm modified mode [ 'src/libcoro/conftest.c', 420, 438 ]
+235 silly gunzTarPerm extractEntry src/libcoro/coro.c
+236 silly gunzTarPerm modified mode [ 'src/libcoro/coro.c', 420, 438 ]
+237 silly gunzTarPerm extractEntry src/libcoro/coro.h
+238 silly gunzTarPerm modified mode [ 'src/libcoro/coro.h', 420, 438 ]
+239 silly gunzTarPerm extractEntry test/already-running.js
+240 silly gunzTarPerm modified mode [ 'test/already-running.js', 420, 438 ]
+241 silly gunzTarPerm extractEntry test/exit.js
+242 silly gunzTarPerm modified mode [ 'test/exit.js', 420, 438 ]
+243 silly gunzTarPerm extractEntry test/fibonacci.js
+244 silly gunzTarPerm modified mode [ 'test/fibonacci.js', 420, 438 ]
+245 silly gunzTarPerm extractEntry test/finish-multiple.js
+246 silly gunzTarPerm modified mode [ 'test/finish-multiple.js', 420, 438 ]
+247 silly gunzTarPerm extractEntry test/future-exception.js
+248 silly gunzTarPerm modified mode [ 'test/future-exception.js', 420, 438 ]
+249 silly gunzTarPerm extractEntry test/exec.js
+250 silly gunzTarPerm modified mode [ 'test/exec.js', 420, 438 ]
+251 silly gunzTarPerm extractEntry test/illegal-yield.js
+252 silly gunzTarPerm modified mode [ 'test/illegal-yield.js', 420, 438 ]
+253 silly gunzTarPerm extractEntry test/pool.js
+254 silly gunzTarPerm modified mode [ 'test/pool.js', 420, 438 ]
+255 silly gunzTarPerm extractEntry test/process-title.js
+256 silly gunzTarPerm modified mode [ 'test/process-title.js', 420, 438 ]
+257 silly gunzTarPerm extractEntry test/stack-overflow.js
+258 silly gunzTarPerm modified mode [ 'test/stack-overflow.js', 420, 438 ]
+259 silly gunzTarPerm extractEntry test/stack-overflow2.js
+260 silly gunzTarPerm modified mode [ 'test/stack-overflow2.js', 493, 511 ]
+261 silly gunzTarPerm extractEntry test/current.js
+262 silly gunzTarPerm modified mode [ 'test/current.js', 420, 438 ]
+263 silly gunzTarPerm extractEntry test/stack-overflow3.js
+264 silly gunzTarPerm modified mode [ 'test/stack-overflow3.js', 420, 438 ]
+265 silly gunzTarPerm extractEntry test/child-process.js
+266 silly gunzTarPerm modified mode [ 'test/child-process.js', 420, 438 ]
+267 silly gunzTarPerm extractEntry test/started.js
+268 silly gunzTarPerm modified mode [ 'test/started.js', 420, 438 ]
+269 silly gunzTarPerm extractEntry test/bad-context.js
+270 silly gunzTarPerm modified mode [ 'test/bad-context.js', 420, 438 ]
+271 silly gunzTarPerm extractEntry test/unwind.js
+272 silly gunzTarPerm modified mode [ 'test/unwind.js', 420, 438 ]
+273 silly gunzTarPerm extractEntry test/future.js
+274 silly gunzTarPerm modified mode [ 'test/future.js', 420, 438 ]
+275 silly lockFile 44cf2e22-modules-sync-node-modules-fibers tar://C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers
+276 silly lockFile 44cf2e22-modules-sync-node-modules-fibers tar://C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers
+277 silly lockFile 8e1d7059-m-cache-fibers-1-0-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\fibers\1.0.6\package.tgz
+278 silly lockFile 8e1d7059-m-cache-fibers-1-0-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\fibers\1.0.6\package.tgz
+279 info preinstall fibers@1.0.6
+280 verbose readDependencies using package.json deps
+281 verbose readDependencies using package.json deps
+282 silly resolved []
+283 verbose about to build C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers
+284 info build C:\data\clearspace\trunk\server\node_modules\sync\node_modules\fibers
+285 verbose linkStuff [ false,
+285 verbose linkStuff   false,
+285 verbose linkStuff   false,
+285 verbose linkStuff   'C:\\data\\clearspace\\trunk\\server\\node_modules\\sync\\node_modules' ]
+286 info linkStuff fibers@1.0.6
+287 verbose linkBins fibers@1.0.6
+288 verbose linkMans fibers@1.0.6
+289 verbose rebuildBundles fibers@1.0.6
+290 info install fibers@1.0.6
+291 verbose unsafe-perm in lifecycle true
+292 info fibers@1.0.6 Failed to exec install script
+293 verbose node_modules\sync\node_modules\fibers unbuild
+294 info preuninstall fibers@1.0.6
+295 info uninstall fibers@1.0.6
+296 verbose false,C:\data\clearspace\trunk\server\node_modules,C:\data\clearspace\trunk\server\node_modules\sync\node_modules unbuild fibers@1.0.6
+297 info postuninstall fibers@1.0.6
+298 verbose about to build C:\data\clearspace\trunk\server\node_modules\sync
+299 verbose node_modules\sync unbuild
+300 info preuninstall sync@0.2.5
+301 info uninstall sync@0.2.5
+302 verbose true,C:\data\clearspace\trunk\server\node_modules,C:\data\clearspace\trunk\server\node_modules unbuild sync@0.2.5
+303 info postuninstall sync@0.2.5
+304 error fibers@1.0.6 install: `node build.js || nodejs build.js`
+304 error Exit status 1
+305 error Failed at the fibers@1.0.6 install script.
+305 error This is most likely a problem with the fibers package,
+305 error not with npm itself.
+305 error Tell the author that this fails on your system:
+305 error     node build.js || nodejs build.js
+305 error You can get their info via:
+305 error     npm owner ls fibers
+305 error There is likely additional logging output above.
+306 error System Windows_NT 6.2.9200
+307 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+308 error cwd C:\data\clearspace\trunk\server
+309 error node -v v0.10.31
+310 error npm -v 1.4.23
+311 error code ELIFECYCLE
+312 verbose exit [ 1, true ]

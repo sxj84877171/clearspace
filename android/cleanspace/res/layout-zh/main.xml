@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.clean.space"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/main_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF" >
+
+        <!-- 标题栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="410dp"
+            android:background="#2D77DA" >
+
+            <RelativeLayout
+                android:id="@+id/tag_title"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#2D77DA" >
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/btn_menu" />
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@id/menu"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_circle_spaceinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/tag_title"
+                android:background="#2D77DA" >
+
+                <RelativeLayout
+                    android:id="@+id/main_circle_spaceinfo_root"
+                    android:layout_width="205dp"
+                    android:layout_height="205dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circle_shape_backgroud" >
+
+                    <com.clean.space.RoundProgressBar
+                        xmlns:android_custom="http://schemas.android.com/apk/res/com.clean.space"
+                        android:id="@+id/roundProgressBar"
+                        android:layout_width="205dp"
+                        android:layout_height="205dp"
+                        android:layout_centerHorizontal="true"
+                        android_custom:roundColor="#FFB359"
+                        android_custom:roundWidth="7dp"
+                        android_custom:textColor="#00000000" />
+
+                    <com.clean.space.RoundProgressBar
+                        xmlns:android_custom="http://schemas.android.com/apk/res/com.clean.space"
+                        android:id="@+id/roundProgressBar_backgroud"
+                        android:layout_width="191dp"
+                        android:layout_height="191dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android_custom:roundColor="#FFFFFF"
+                        android_custom:textColor="#00000000"
+                        app:roundWidth="96dp" />
+
+                    <TextView
+                        android:id="@+id/export_for_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/roundProgressBar_backgroud"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="38dp"
+                        android:ellipsize="end"
+                        android:maxWidth="175dp"
+                        android:singleLine="true"
+                        android:text="@string/exportsize"
+                        android:textColor="#666666"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/tv_wantClearSize_root"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/export_for_me"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_wantClearSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:ellipsize="end"
+                            android:maxWidth="180dp"
+                            android:singleLine="true"
+                            android:text="@string/half_year"
+                            android:textColor="#2c77d9"
+                            android:textSize="22sp" />
+
+                        <ImageView
+                            android:id="@+id/clear_change_size"
+                            android:layout_width="20dp"
+                            android:layout_height="7.5dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/desc"
+                            android:src="@drawable/btn_select_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_wantClearSize_root"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gongji"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/seleted_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#333333"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/seleted_size_danwei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MB"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/just_export"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/ll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/scan_btn_selector"
+                android:text="@string/export"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="140dp"
+                    android:singleLine="true"
+                    android:text="@string/all_pic_size"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/all_pic_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example_1"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/all_pic_size_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Dwsize_mb"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxWidth="160dp"
+                    android:singleLine="true"
+                    android:text="@string/freespace_of_phone"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/freespace_of_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example_1"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/freespace_of_phone_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Dwsize_mb"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- Button和高级设置 -->
+
+        <Button
+            android:id="@+id/Btn_clear"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_selector_main2_new"
+            android:text="@string/title_activity_clean_photo"
+            android:textColor="#ae0000"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        <!-- 为我清理 -->
+
+        <TextView
+            android:id="@+id/fastMoveDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/fast_move"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_grade_fraglatout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197.5dp"
+        android:background="@drawable/textviewshape"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_menu"
+        layout="@layout/menu"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/feedback_panel_activity"
+        layout="@layout/feedback"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/dialog"
+        layout="@layout/dialog_update"
+        android:visibility="gone" />
+
+</RelativeLayout>

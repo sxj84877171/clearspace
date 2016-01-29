@@ -1,0 +1,25 @@
+{
+  "name": "linkit",
+  "version": "0.1.3",
+  "description": "linkit nodejs server",
+  "repository": {
+    "type" : "svn",
+    "url" : "https://114.215.236.240/svn/linkit/trunk/Server"
+  },
+  "dependencies": {
+    "express": "*",
+    "serve-static": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "ws": "*",
+    "validator": "*",
+    "merge": "*",
+    "mysql": "*",
+    "log4js": "0.6.6",
+    "sync": "*",
+	"formidable": "*",
+	"twilio": "*",
+	"xmldom":"*",
+	"xpath.js":"*"
+  }
+}

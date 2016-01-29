@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="">
+		<meta name="description" itemprop="description" content="">
+		<meta itemprop="name" content="">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="darkslategray">
+		<title>照片大挪移 - 最快腾空间的应用</title>
+
+		<script type="text/javascript">
+			var t0 = new Date();
+			var os = function() {
+				var ua = navigator.userAgent,
+					isWindowsPhone = /(?:Windows Phone)/.test(ua),
+					isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+					isAndroid = /(?:Android)/.test(ua),
+					isFireFox = /(?:Firefox)/.test(ua),
+					isChrome = /(?:Chrome|CriOS)/.test(ua),
+					isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+					isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+					isPc = !isPhone && !isAndroid && !isSymbian;
+				return {
+					isTablet: isTablet,
+					isPhone: isPhone,
+					isAndroid: isAndroid,
+					isPc: isPc
+				};
+			}();
+			var getSearch = function(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substring(1).match(reg);
+				if (!!r) {
+					return unescape(r[2]);
+				}
+				return null;
+			};
+			var addStyleLink = function(href){
+            var head = document.getElementsByTagName('head')[0];
+            var styleLink = document.createElement('link');
+            styleLink.setAttribute('rel','stylesheet');
+            styleLink.setAttribute('href',href);
+            head.appendChild(styleLink);
+        }
+			var viewpc = getSearch("vpc");
+			if (!viewpc && (os.isAndroid || os.isPhone)) {
+				addStyleLink('css/mobile.css');
+			} 
+//			else if (os.isTablet) {
+////				location.replace('/cn/m/' + searchstr + hashstr);
+//			} 
+			else{
+//				addStyleLink('css/mobile.css');
+				addStyleLink('css/main.css');
+				addStyleLink('css/animation.css');
+			}
+			 //			(function(){
+			 //	//语言
+			 //	//change_language();
+			 //	var language = navigator.browserLanguage ? navigator.browserLanguage : navigator.language;
+			 //	if(language.indexOf('zh') >= 0)
+			 //	{
+			 //		window.location.href="cn/index.html";
+			 //	}
+			 //})();
+		</script>
+		<!--<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/animation.css" />-->
+		<!--<link rel="stylesheet" href="css/mobile.css" />-->
+	</head>
+
+	<body id="pg0">
+		<!--S header-->
+		<div id="top" class="top">
+			<div class="top_com">
+				<div class="logo">
+					<h1>
+                <a href="index.html"><img class="logo_l" src="images/logo_l.png" />照片大挪移</a>
+            </h1>
+				</div>
+				<ul>
+					<li><a class="top_nav_sel" id="">首页</a></li>
+					<li><a href="timeline.html" id="">更新日志</a></li>
+					<li><a href="faq.html" id="">FAQ</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--E header-->
+
+		<!--S banner-->
+		<div class="crossbanenr">
+			<ul id="crossbanenr">
+				<li class="bn1" style="display: list-item;">
+					<div class="bncont">
+
+						<div class="bntxt">
+							<p class="txt1">照片大挪移</p>
+							<p class="txt2">快速，灵活</span>
+							</p>
+							<p class="txt3"> 为您腾出手机空间</p>
+							<div class="animate_phone">
+								<div class="animate_img_p1"></div>
+								<div class="animate_img_p2"></div>
+								<div class="animate_img_p3"></div>
+							</div>
+							<div class="animate_computer">
+								<div class="animate_img_c1"></div>
+								<div class="animate_img_c2"></div>
+								<div class="animate_img_c3"></div>
+							</div>
+							<div class="animate_line_to">
+								<div class="animate_line_point"></div>
+							</div>
+							<div class="moble_top_img"><img src="images/mobile_top_main.png" /></div>
+							<a class="btn dl_android" id="dl_android" href="#" target="_blank">Android下载</a>
+							<!--<a class="btn dl_iphone" id="dl_iphone" href="#" target="_blank">iPhone下载</a>-->
+							<a class="btn dl_windows" id="dl_windows" href="#" target="_blank">Windows下载</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<!--E banner-->
+
+		<!--S figure-->
+		<div class="content">
+			<div class="lmtt">
+				<p class="txt1">照片大挪移</p>
+				<p class="txt2">最快腾空间的应用</p>
+			</div>
+
+			<div id="fisrtbg" class="activebg fisrtbg" data-stellar-background-ratio="0.4"></div>
+			<div class="lmmod first_list">
+				<div class="lm960">
+					<div class="txtwrap">
+						<p class="title1">快速</p>
+						<p class="txt1">照片太多，空间不够，整理太麻烦</p>
+						<p class="txt1">怎么办？</p>
+						<p class="txt1">给您极速解决方案</p>
+						<!--<p class="txt1">要出门了，手机空间不够，怎么拍照？</p>
+						<p class="txt1">照片大挪移极速腾出空间</p>-->
+					</div>
+					<div class="firstwrap">
+
+					</div>
+				</div>
+			</div>
+			<div id="secondbg" class="activebg secondbg" data-stellar-background-ratio="0.4"></div>
+			<div class="lmmod second_list">
+				<div class="lm960">
+					<div class="txtwrap">
+						<p class="title1">灵活</p>
+						<p class="txt1"><!--灵活腾出空间 --></p>
+						<p class="txt1">要多少空间，就给您多少空间</p>
+					</div>
+					<div class="secondwrap">
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--E figure-->
+
+		<!--footer-->
+		<div id="footer" class="footer">
+			<div class="logo_footer_txt">
+				<div class="logo_footer_img"></div>照片大挪移</div>
+
+		</div>
+
+		<div id="tbox">
+			<img id="gotop" src="images/gotop.png">
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/stellar.js"></script>
+		<script type="text/javascript" src="js/gotop.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$.stellar({
+					horizontalScrolling: false,
+					horizontalOffset: 40,
+					verticalOffset: 40
+				});
+				var mod = $(".lmmod");
+				var $body = $("body");
+				var dataArr = [];
+				$(mod).each(function(i, item) {
+					if (i === 0) {
+						dataArr[i] = $(item).offset().top - Math.floor($(item).height() / 2) - 500
+					} else {
+						dataArr[i] = $(item).offset().top - Math.floor($(item).height() / 2)
+					}
+				});
+				var winHeight = $(window).height();
+				var bodyheight = $body.height();
+				$(".crossbanenr").animate({
+					height: (winHeight - 150) > 540 ? (winHeight - 150) : 540
+				}, 100, function() {});
+				$(window).resize(function() {
+					winHeight = $(window).height();
+					bodyheight = $body.height();
+					$(".crossbanenr").animate({
+						height: (winHeight - 150) > 540 ? (winHeight - 150) : 540
+					}, 100, function() {})
+				});
+				var isIE = !!window.ActiveXObject;
+				var scrollTop = $(window).scrollTop();
+				var clientHeight = $(window).height();
+				var contentHeight = 584;
+				var barHeight = 600;
+				var firstHeight = 778;
+				var topHeight = 321;
+				var thirdScroll = clientHeight < (topHeight + firstHeight) ? contentHeight : (contentHeight - clientHeight + topHeight + firstHeight);
+				var fourthScroll = thirdScroll + contentHeight + barHeight;
+				var fifthScroll = fourthScroll + contentHeight + barHeight;
+				var sixthScroll = fifthScroll + contentHeight + barHeight;
+				var changeH = (firstHeight + topHeight - clientHeight) / 2;
+				var st = new Date().getTime();
+				$(window).scroll(function(e) {
+					scrollTop = $(window).scrollTop();
+					if (scrollTop >= firstHeight) {
+						$("#top").addClass("topicfixed")
+					} else {
+						if ($("#top").hasClass("topicfixed")) {
+							$("#top").removeClass("topicfixed")
+						}
+					} if (scrollTop < 100) {
+						$body.attr("id", "pg0")
+					}
+					$(dataArr).each(function(i, item) {
+						if (Math.floor(winHeight / 2) + scrollTop >= item) {
+							$body.attr("id", "pg" + (i + 1))
+						}
+					});
+					if (scrollTop + winHeight >= bodyheight) {
+						$body.attr("id", "pg2")
+					}
+				})
+			});
+			 //Download URL
+			$(function() {
+				function DownloadInformation() {
+					//Android
+					this.oAndroidDownload = document.getElementById('dl_android');
+					//iPhone
+//					this.oIPhoneDownload = document.getElementById('dl_iphone');
+					//Windows
+					this.oWindowsDownload = document.getElementById('dl_windows');
+				}
+				DownloadInformation.prototype.setUrl = function() {
+					//Android
+					this.oAndroidDownload.href = android_dl;
+					//iPhone
+//					this.oIPhoneDownload.href = iphone_dl;
+					//Windows
+					this.oWindowsDownload.href = windows_dl;
+				}
+				var oDownloadInformation = new DownloadInformation();
+				oDownloadInformation.setUrl();
+			});
+		</script>
+	</body>
+
+</html>

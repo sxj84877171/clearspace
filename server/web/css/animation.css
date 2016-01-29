@@ -1,0 +1,263 @@
+
+.bntxt .animate_phone .animate_img_p1 {
+	animation:phonep1 5s ease-out;
+	-webkit-animation:phonep1 5s ease-out;
+}
+.bntxt .animate_phone .animate_img_p2 {
+	animation:phonep2 5s ease-out;
+	-webkit-animation:phonep2 5s ease-out;
+}
+.bntxt .animate_phone .animate_img_p3 {
+	animation:phonep3 5s ease-out;
+	-webkit-animation:phonep3 5s ease-out;
+}
+
+.bntxt .animate_computer .animate_img_c1 {
+	animation:computerc1 5s ease-out;
+	-webkit-animation:computerc1 5s ease-out;
+}
+.bntxt .animate_computer .animate_img_c2 {
+	animation:computerc2 5s ease-out;
+	-webkit-animation:computerc2 5s ease-out;
+}
+.bntxt .animate_computer .animate_img_c3 {
+	animation:computerc3 5s ease-out;
+	-webkit-animation:computerc3 5s ease-out;
+}
+.bntxt .animate_line_to .animate_line_point {
+	animation:linepoint 5s ease-out;
+	-webkit-animation:linepoint 5s ease-out;
+}
+
+.bntxt .animate_phone .animate_img_p1,
+.bntxt .animate_phone .animate_img_p2,
+.bntxt .animate_phone .animate_img_p3,
+.bntxt .animate_computer .animate_img_c1,
+.bntxt .animate_computer .animate_img_c2,
+.bntxt .animate_computer .animate_img_c3,
+.bntxt .animate_line_to .animate_line_point 
+ {
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+
+@-webkit-keyframes phonep1 
+{
+0% {left: 10px;opacity: 0;}
+6%,18% {left:19px;opacity: 1;}
+24%,100% {left:28px;opacity: 0;}
+}
+
+@-webkit-keyframes phonep2
+{
+0% ,4%{left: 10px;opacity: 0;}
+10%,22% {left:19px;opacity: 1;}
+28%,100% {left:28px;opacity: 0;}
+}
+
+@-webkit-keyframes phonep3 
+{
+0%,8% {left: 10px;opacity: 0;}
+14%,26% {left:19px;opacity: 1;}
+32%,100% {left:28px;opacity: 0;}
+}
+
+@-webkit-keyframes linepoint
+{
+0% ,31%{left: -30px;opacity: 0;}
+32% {left: 0px;opacity: 1;}
+43%{left:353px;opacity: 1;}
+44%,100% {left:353px;opacity: 0;}
+}
+
+@-webkit-keyframes computerc1 
+{
+0%,46% {top: 52px;opacity: 0;}
+52%,74% {top:42px;opacity: 1;}
+80%,100% {top:52px;opacity: 0;}
+}
+
+@-webkit-keyframes computerc2
+{
+0%,50% {top: 52px;opacity: 0;}
+56%,76% {top:42px;opacity: 1;}
+82%,100% {top:52px;opacity: 0;}
+}
+
+@-webkit-keyframes computerc3
+{
+0%,54% {top: 52px;opacity: 0;}
+60%,78% {top:42px;opacity: 1;}
+84%,100% {top:52px;opacity: 0;}
+}
+
+
+
+@keyframes phonep1 
+{
+0% {left: 10px;opacity: 0;}
+6%,18% {left:19px;opacity: 1;}
+24%,100% {left:28px;opacity: 0;}
+}
+
+@keyframes phonep2
+{
+0% ,4%{left: 10px;opacity: 0;}
+10%,22% {left:19px;opacity: 1;}
+28%,100% {left:28px;opacity: 0;}
+}
+
+@keyframes phonep3 
+{
+0%,8% {left: 10px;opacity: 0;}
+14%,26% {left:19px;opacity: 1;}
+32%,100% {left:28px;opacity: 0;}
+}
+
+@keyframes linepoint
+{
+0% ,31%{left: -30px;opacity: 0;}
+32% {left: 0px;opacity: 1;}
+43%{left:353px;opacity: 1;}
+44%,100% {left:353px;opacity: 0;}
+}
+
+@keyframes computerc1 
+{
+0%,46% {top: 52px;opacity: 0;}
+52%,74% {top:42px;opacity: 1;}
+80%,100% {top:52px;opacity: 0;}
+}
+
+@keyframes computerc2
+{
+0%,50% {top: 52px;opacity: 0;}
+56%,76% {top:42px;opacity: 1;}
+82%,100% {top:52px;opacity: 0;}
+}
+
+@keyframes computerc3
+{
+0%,54% {top: 52px;opacity: 0;}
+60%,78% {top:42px;opacity: 1;}
+84%,100% {top:52px;opacity: 0;}
+}
+
+/*lmtt*/
+/*.lmtt .txt1{
+	animation:letterspacings 2s ease-out;
+	-webkit-animation:letterspacings 2s ease-out;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0.5s;
+	-webkit-animation-delay:0.5s;
+}*/
+/*.lmtt .txt2{
+	animation:letterspacingbig 5s ease-out;
+	-webkit-animation:letterspacingbig 5s ease-out;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0.8s;
+	-webkit-animation-delay:0.8s;
+}*/
+
+
+
+/*list*/
+#pg1 .first_list .firstwrap{
+	animation:toleft1 1.2s ease-out;
+	-webkit-animation:toleft1 1.2s ease-out;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+#pg1 .first_list .txtwrap,
+#pg2 .second_list .txtwrap{
+	animation:totop1 0.6s ease-out;
+	-webkit-animation:totop1 0.6s ease-out;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0.9s;
+	-webkit-animation-delay:0.9s;
+}
+
+#pg2 .second_list .secondwrap{
+	animation:toright1 1.2s ease-out;
+	-webkit-animation:toright1 1.2s ease-out;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+
+
+@-webkit-keyframes toleft1{
+	from{right:0px; opacity: 0;}
+	to{right:10px; opacity: 1;}
+}
+@keyframes toleft1{
+	from{right:0; opacity: 0;}
+	to{right:10px;  opacity: 1;}
+}
+@-webkit-keyframes toright1{
+	from{left:0px; opacity: 0;}
+	to{left:10px; opacity: 1;}
+}
+@keyframes toright1{
+	from{left:0; opacity: 0;}
+	to{left:10px;  opacity: 1;}
+}
+
+@-webkit-keyframes totop1{
+	from{margin-top:20px; opacity: 0;}
+	to{margin-top:0px; opacity: 1;}
+}
+@keyframes totop1{
+	from{margin-top:20px; opacity: 0;}
+	to{margin-top:0px; opacity: 1;}
+}
+
+@-webkit-keyframes letterspacings{
+	from{letter-spacing: 0px;}
+	to{letter-spacing: 5px;}
+}
+@keyframes letterspacings{
+	from{letter-spacing: 0px;}
+	to{letter-spacing: 5px;}
+}
+
+@-webkit-keyframes letterspacingbig{
+	from{letter-spacing: 6px;}
+	to{letter-spacing: 20px;}
+}
+@keyframes letterspacingbig{
+	from{letter-spacing: 6px;}
+	to{letter-spacing: 20px;}
+}

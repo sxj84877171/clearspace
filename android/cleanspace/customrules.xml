@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_rules" >
+
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties" >
+        <classpath>
+            <pathelement location="lib/ant-contrib-1.0b3.jar" />
+        </classpath>
+    </taskdef>
+
+    <target name="deploy" >
+        <foreach
+            delimiter=","
+            list="${market_channels}"
+            param="channel"
+            target="modify_manifest" >
+        </foreach>
+    </target>
+
+    <target name="modify_manifest" >
+       <replaceregexp flags="g" byline="false">  
+    	<regexp pattern="android:value=&quot;(.*)&quot; android:name=&quot;UMENG_CHANNEL&quot;" />  
+   		 <substitution expression="android:value=&quot;{channel}&quot; android:name=&quot;UMENG_CHANNEL&quot;" />  
+           <fileset
+                dir=""
+                includes="AndroidManifest.xml" />
+        </replaceregexp>
+        <property
+            name="out.final.file"
+            location="${apk.dir}/rongyi_${channel}.apk" />
+        <antcall target="clean" />
+        <antcall target="debug" />
+    </target>
+</project>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/export_title_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:src="@drawable/icon_title_select" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/export_title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/export_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/export_total_info"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.clean.space.ui.HandleProgressBar
+        android:id="@+id/export_progress"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/top_title"
+        android:background="@color/export_progress_normal"
+        android:gravity="center_vertical" />
+
+    <!-- bottom button -->
+
+    <RelativeLayout
+        android:id="@+id/export_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_back_select"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_delete_select"
+            android:gravity="center"
+            android:text="@string/clear_delete_btn"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_delete_select"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/export_action_button"
+        android:layout_below="@id/export_progress"
+        android:background="@color/export_content_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/similar_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/gray_corner_bg"
+            android:orientation="vertical" >
+
+            <com.clean.space.ui.SimilarProgressBar
+                android:id="@+id/similar_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:id="@+id/similar_photo_blob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/similar_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_corner_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/export_alubum_operations"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/white_corner_bg" >
+
+                    <ImageView
+                        android:id="@+id/album_photo_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.5dp"
+                        android:src="@drawable/icon_image_black" />
+
+                    <ImageView
+                        android:id="@+id/show_album_photo_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_down_open_normal" />
+
+                    <TextView
+                        android:id="@+id/album_photo_size_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/show_album_photo_icon"
+                        android:text="0 MB"
+                        android:textColor="@color/export_found_size_info"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/album_photo_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/album_photo_icon"
+                        android:maxWidth="80dp"
+                        android:text="@string/export_album_photo_message"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/album_photo_size_info"
+                        android:layout_toRightOf="@id/album_photo_message"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/sort_list_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/icon_sort_down" />
+
+                        <TextView
+                            android:id="@+id/sort_selected_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="140dp"
+                            android:text="@string/clear_sort_item1"
+                            android:textColor="@color/clear_operations"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/album_photo_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bottom_corner_bg"
+                    android:visibility="gone" >
+
+                    <GridView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="0dp"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0dp" >
+                    </GridView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- sort menu options -->
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="40dp" >
+
+                <LinearLayout
+                    android:id="@+id/sort_options"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sort_list_shape"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/sort_option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sort_option_select"
+                        android:gravity="center"
+                        android:text="@string/clear_sort_item1"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/sort_option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sort_option_select"
+                        android:gravity="center"
+                        android:text="@string/clear_sort_item2"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/sort_option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sort_option_select"
+                        android:gravity="center"
+                        android:text="@string/clear_sort_item3"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/sort_option4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sort_option_select"
+                        android:gravity="center"
+                        android:text="@string/clear_sort_item4"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/show_big_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clear_big_photo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/show_big_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

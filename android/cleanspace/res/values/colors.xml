@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="littler_red">#DD0000</color>
+    <color name="pc_down_color">#10000000</color>
+    <color name="pc_up_color">#10000000</color>
+    <color name="button_up1">#2D77DA</color>
+    <color name="button_up2">#2D77DA</color>
+    <color name="button_dowm">#90003775</color>
+    <color name="from">#314a6c</color>
+    <color name="to">#2c77d9</color>
+
+    <drawable name="btn_action_pressed">#0068c9</drawable>
+    <drawable name="btn_action_normal">#129dfe</drawable>
+    <drawable name="btn_action_hover">#007bed</drawable>
+    <drawable name="btn_action_disable">#7cb0d5</drawable>
+    <drawable name="menu_item_normal">#f5f5f5</drawable>
+    <drawable name="menu_item_pressed">#90ffffff</drawable>
+
+    <!-- clear photo -->
+    <color name="clear_selected">#EEEEEE</color>
+    <color name="clear_title">#33943C</color>
+    <color name="clear_message">#277D2F</color>
+    <color name="clear_content">#BFECCA</color>
+    <color name="clear_operations">#2C77D9</color>
+    <color name="clear_delete_normal">#A00202</color>
+    <color name="clear_delete_hover">#800000</color>
+    <color name="clear_delete_pressed">#6C0000</color>
+    <color name="clear_back_normal">#2C77D9</color>
+    <color name="clear_back_hover">#2569C2</color>
+    <color name="clear_back_pressed">#1E5CAD</color>
+    <color name="clear_clear_progress">#16A824</color>
+    <color name="clear_big_photo">#D0000000</color>
+
+    <!-- export photo -->
+    <color name="export_title_background">#2C77D9</color>
+    <color name="export_progress_normal">#0E4EA4</color>
+    <color name="export_analyze_progress">#1057B5</color>
+    <color name="export_delete_progress">#2868BD</color>
+    <color name="export_content_background">#96C3FF</color>
+    <color name="export_found_size_info">#2C77D9</color>
+    <color name="export_subcontent_background">#E9E9E9</color>
+    <color name="export_find_similar_progress">#DEECFF</color>
+
+    <!-- alert delete dialog -->
+    <color name="alert_delete_title">#333333</color>
+    <color name="alert_delete_message">#666666</color>
+    <color name="alert_delete_location">#2C77D9</color>
+    
+    <color name="yellow_speed">#FFC258</color>
+
+    <drawable name="btn_back_action_pressed">#1e5cad</drawable>
+    <drawable name="btn_back_action_normal">#2c77d9</drawable>
+    <drawable name="btn_back_action_hover">#2569c2</drawable>
+    <drawable name="scan_pre">#22ffffff</drawable>
+    <drawable name="scan_nor">#00000000</drawable>
+    <drawable name="scan_retry_nor">#195AAF</drawable>
+    <drawable name="scan_clean_nor">#286bc3</drawable>
+    <drawable name="scan_clean_pre">#1f58a3</drawable>
+    <drawable name="scan_retry_pre">#134911</drawable>
+    <drawable name="scan_cancle_save_nor">#a1426e</drawable>
+    <drawable name="scan_cancle_save_pre">#6c0000</drawable>
+    <drawable name="dialog">#00000000</drawable>
+    <drawable name="drive_color">#236bc9</drawable>
+    <drawable name="login_back_ground">#195aaf</drawable>
+    
+
+</resources>

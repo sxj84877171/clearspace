@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/similar_progress"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@drawable/white_corner_bg" >
+
+    <LinearLayout
+        android:id="@+id/progress_state"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/similar_progress_leftpart_corner_bg"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent" >
+
+        <ImageView
+            android:id="@+id/find_similar_icon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7.5dp"
+            android:src="@drawable/icon_image_black_two" />
+
+        <ImageView
+            android:id="@+id/show_similar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_down_open_normal" />
+
+        <TextView
+            android:id="@+id/found_size_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/show_similar_icon"
+            android:text="0 MB"
+            android:textColor="@color/export_found_size_info"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/similar_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/found_size_info"
+            android:layout_toRightOf="@id/find_similar_icon"
+            android:text="@string/export_similar_finding"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

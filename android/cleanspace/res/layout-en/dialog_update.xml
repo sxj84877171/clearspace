@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="184dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/confirm_dia_root"
+            android:layout_width="fill_parent"
+            android:layout_height="134dp"
+            android:background="@drawable/nullback"
+            android:clickable="true"
+            android:enabled="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_newV"
+                    android:textColor="#2C77D9"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#2C77D9"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/describe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_dia_anniu_root"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/dialog_update"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_back_select"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/dialog_update"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dialog_cancle"
+                android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_back_select"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

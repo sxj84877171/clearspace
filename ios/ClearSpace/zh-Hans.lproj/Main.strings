@@ -1,0 +1,336 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0rC-hV-MG8"; */
+"0rC-hV-MG8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "这些照片曾经导出到：Bob-W701 的 桌面\\照片大挪移\\ "; ObjectID = "0yl-Jg-3XC"; */
+"0yl-Jg-3XC.text" = "这些照片曾经导出到：Bob-W701 的 桌面\\照片大挪移\\ ";
+
+/* Class = "UILabel"; text = "相似照片"; ObjectID = "1OM-qR-TLM"; */
+"1OM-qR-TLM.text" = "相似照片";
+
+/* Class = "UIButton"; normalTitle = "查看后删除 >"; ObjectID = "1Uc-Vz-FW1"; */
+"1Uc-Vz-FW1.normalTitle" = "查看后删除 >";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "20J-QJ-aqB"; */
+"20J-QJ-aqB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "5.6GB"; ObjectID = "2BZ-EK-vQk"; */
+"2BZ-EK-vQk.text" = "5.6GB";
+
+/* Class = "UILabel"; text = "GB"; ObjectID = "2yg-gY-UEm"; */
+"2yg-gY-UEm.text" = "GB";
+
+/* Class = "UILabel"; text = "照片总大小："; ObjectID = "3BU-Cn-3FG"; */
+"3BU-Cn-3FG.text" = "照片总大小：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Kg-Ks-v3D"; */
+"3Kg-Ks-v3D.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Ua-Fh-LBf"; */
+"3Ua-Fh-LBf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = ".29"; ObjectID = "5Ca-5j-nE1"; */
+"5Ca-5j-nE1.text" = ".29";
+
+/* Class = "UILabel"; text = "已经导出照片："; ObjectID = "5OI-xV-qqh"; */
+"5OI-xV-qqh.text" = "已经导出照片：";
+
+/* Class = "UILabel"; text = "选择要清理的照片"; ObjectID = "5Pp-3T-ugB"; */
+"5Pp-3T-ugB.text" = "选择要清理的照片";
+
+/* Class = "UILabel"; text = "MB"; ObjectID = "5o0-J5-lQo"; */
+"5o0-J5-lQo.text" = "MB";
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "6iX-Ze-xOx"; */
+"6iX-Ze-xOx.title" = "返回";
+
+/* Class = "UILabel"; text = "电脑运行"; ObjectID = "7R0-Zo-MZG"; */
+"7R0-Zo-MZG.text" = "电脑运行";
+
+/* Class = "UILabel"; text = "桌面\\照片大挪移\\"; ObjectID = "7hd-I4-SQo"; */
+"7hd-I4-SQo.text" = "桌面\\照片大挪移\\";
+
+/* Class = "UILabel"; text = "按时间 从旧到新"; ObjectID = "7p8-7y-v6C"; */
+"7p8-7y-v6C.text" = "按时间 从旧到新";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "94a-N5-Q0d"; */
+"94a-N5-Q0d.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "GB"; ObjectID = "975-Dn-5eR"; */
+"975-Dn-5eR.text" = "GB";
+
+/* Class = "UILabel"; text = "上次处理："; ObjectID = "BOp-oh-xht"; */
+"BOp-oh-xht.text" = "上次处理：";
+
+/* Class = "UILabel"; text = "正在寻找您的电脑"; ObjectID = "C9S-Qw-nD2"; */
+"C9S-Qw-nD2.text" = "正在寻找您的电脑";
+
+/* Class = "UILabel"; text = "照片大挪移"; ObjectID = "CHQ-rV-ubg"; */
+"CHQ-rV-ubg.text" = "照片大挪移";
+
+/* Class = "UILabel"; text = "最快腾空间，就用照片大挪移"; ObjectID = "CNQ-rv-Z1O"; */
+"CNQ-rv-Z1O.text" = "最快腾空间，就用照片大挪移";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "CPV-H6-dyI"; */
+"CPV-H6-dyI.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "反馈"; ObjectID = "CWf-7u-4NY"; */
+"CWf-7u-4NY.text" = "反馈";
+
+/* Class = "UIButton"; normalTitle = "提交"; ObjectID = "D6t-7i-YhX"; */
+"D6t-7i-YhX.normalTitle" = "提交";
+
+/* Class = "UIButton"; normalTitle = "删除刚才导出的照片"; ObjectID = "Ecy-iQ-LHu"; */
+"Ecy-iQ-LHu.normalTitle" = "删除刚才导出的照片";
+
+/* Class = "UILabel"; text = "2015.09.10 12:00"; ObjectID = "F8U-rz-z3o"; */
+"F8U-rz-z3o.text" = "2015.09.10 12:00";
+
+/* Class = "UILabel"; text = "已选择1000张，长按查看大图"; ObjectID = "GKN-su-QLZ"; */
+"GKN-su-QLZ.text" = "已选择1000张，长按查看大图";
+
+/* Class = "UILabel"; text = "分享"; ObjectID = "IQ5-jB-rkT"; */
+"IQ5-jB-rkT.text" = "分享";
+
+/* Class = "UINavigationItem"; title = "照片大挪移"; ObjectID = "IQT-lf-Yc4"; */
+"IQT-lf-Yc4.title" = "照片大挪移";
+
+/* Class = "UILabel"; text = "2.5G"; ObjectID = "IT0-UD-gXE"; */
+"IT0-UD-gXE.text" = "2.5G";
+
+/* Class = "UINavigationItem"; title = "照片整理"; ObjectID = "Iod-hS-Qnk"; */
+"Iod-hS-Qnk.title" = "照片整理";
+
+/* Class = "UILabel"; text = "连接出了问题"; ObjectID = "JYK-pM-WhV"; */
+"JYK-pM-WhV.text" = "连接出了问题";
+
+/* Class = "UILabel"; text = "共2311张"; ObjectID = "JgP-mD-yxW"; */
+"JgP-mD-yxW.text" = "共2311张";
+
+/* Class = "UILabel"; text = "在"; ObjectID = "KKP-WI-Pob"; */
+"KKP-WI-Pob.text" = "在";
+
+/* Class = "UIButton"; normalTitle = "导    出"; ObjectID = "Khe-FR-mQF"; */
+"Khe-FR-mQF.normalTitle" = "导    出";
+
+/* Class = "UIButton"; normalTitle = "返回"; ObjectID = "KlL-dd-yZu"; */
+"KlL-dd-yZu.normalTitle" = "返回";
+
+/* Class = "UILabel"; text = "附近的电脑"; ObjectID = "Lhy-XN-yoa"; */
+"Lhy-XN-yoa.text" = "附近的电脑";
+
+/* Class = "UILabel"; text = "所有照片"; ObjectID = "LtE-9j-WHU"; */
+"LtE-9j-WHU.text" = "所有照片";
+
+/* Class = "UILabel"; text = "图片保存在："; ObjectID = "Nwx-Ox-5lY"; */
+"Nwx-Ox-5lY.text" = "图片保存在：";
+
+/* Class = "UILabel"; text = "相册照片"; ObjectID = "PWH-xp-kbY"; */
+"PWH-xp-kbY.text" = "相册照片";
+
+/* Class = "UILabel"; text = "已导出"; ObjectID = "PeD-jF-GOU"; */
+"PeD-jF-GOU.text" = "已导出";
+
+/* Class = "UILabel"; text = "退出"; ObjectID = "Qug-XY-asG"; */
+"Qug-XY-asG.text" = "退出";
+
+/* Class = "UILabel"; text = "GB"; ObjectID = "R9C-oA-wAP"; */
+"R9C-oA-wAP.text" = "GB";
+
+/* Class = "UILabel"; text = "正在处理："; ObjectID = "RAZ-6U-yCa"; */
+"RAZ-6U-yCa.text" = "正在处理：";
+
+/* Class = "UILabel"; text = "上次处理："; ObjectID = "RbS-hI-jSf"; */
+"RbS-hI-jSf.text" = "上次处理：";
+
+/* Class = "UILabel"; text = "2.60"; ObjectID = "S19-TH-BzZ"; */
+"S19-TH-BzZ.text" = "2.60";
+
+/* Class = "UILabel"; text = "您可以在这里删除这些照片"; ObjectID = "T6D-SK-iJq"; */
+"T6D-SK-iJq.text" = "您可以在这里删除这些照片";
+
+/* Class = "UILabel"; text = "2015.09.10 12:00"; ObjectID = "TDI-pW-VCm"; */
+"TDI-pW-VCm.text" = "2015.09.10 12:00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TKq-AV-49k"; */
+"TKq-AV-49k.text" = "Label";
+
+/* Class = "UILabel"; text = "描述"; ObjectID = "Tb9-iX-ULG"; */
+"Tb9-iX-ULG.text" = "描述";
+
+/* Class = "UILabel"; text = "共计"; ObjectID = "Tmg-zU-Ezg"; */
+"Tmg-zU-Ezg.text" = "共计";
+
+/* Class = "UINavigationItem"; title = "帮助与反馈"; ObjectID = "TnA-fK-oBy"; */
+"TnA-fK-oBy.title" = "帮助与反馈";
+
+/* Class = "UILabel"; text = "未导出的照片"; ObjectID = "U35-c5-VaU"; */
+"U35-c5-VaU.text" = "未导出的照片";
+
+/* Class = "UIButton"; normalTitle = "重试"; ObjectID = "Ueo-e9-HOk"; */
+"Ueo-e9-HOk.normalTitle" = "重试";
+
+/* Class = "UILabel"; text = "开发爱吐槽"; ObjectID = "V7S-CP-tOq"; */
+"V7S-CP-tOq.text" = "开发爱吐槽";
+
+/* Class = "UINavigationItem"; title = "选择电脑"; ObjectID = "VqE-ba-uIo"; */
+"VqE-ba-uIo.title" = "选择电脑";
+
+/* Class = "UILabel"; text = "4.6"; ObjectID = "W87-Pu-Ifd"; */
+"W87-Pu-Ifd.text" = "4.6";
+
+/* Class = "UILabel"; text = "手机剩余空间："; ObjectID = "WE9-Gt-a3g"; */
+"WE9-Gt-a3g.text" = "手机剩余空间：";
+
+/* Class = "UIButton"; normalTitle = "照片整理"; ObjectID = "X6e-Ma-CVI"; */
+"X6e-Ma-CVI.normalTitle" = "照片整理";
+
+/* Class = "UILabel"; text = "上次选择的电脑"; ObjectID = "Xoa-07-hnp"; */
+"Xoa-07-hnp.text" = "上次选择的电脑";
+
+/* Class = "UILabel"; text = "523"; ObjectID = "XxG-ME-JMo"; */
+"XxG-ME-JMo.text" = "523";
+
+/* Class = "UILabel"; text = "清理(2.5G)"; ObjectID = "ZfJ-a0-Vcp"; */
+"ZfJ-a0-Vcp.text" = "清理(2.5G)";
+
+/* Class = "UILabel"; text = "共2311张"; ObjectID = "bGy-hf-glR"; */
+"bGy-hf-glR.text" = "共2311张";
+
+/* Class = "UILabel"; text = "已导出未清理的照片"; ObjectID = "bZJ-kX-kAo"; */
+"bZJ-kX-kAo.text" = "已导出未清理的照片";
+
+/* Class = "UILabel"; text = "选择要清理的照片"; ObjectID = "bhP-bt-jsH"; */
+"bhP-bt-jsH.text" = "选择要清理的照片";
+
+/* Class = "UILabel"; text = "清理(2.5G)"; ObjectID = "boO-JI-cNj"; */
+"boO-JI-cNj.text" = "清理(2.5G)";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "c1q-OJ-iai"; */
+"c1q-OJ-iai.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cDb-WA-pRq"; */
+"cDb-WA-pRq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "桌面\\照片大挪移\\"; ObjectID = "ceO-cr-Enh"; */
+"ceO-cr-Enh.text" = "桌面\\照片大挪移\\";
+
+/* Class = "UILabel"; text = "手机和电脑"; ObjectID = "cku-Ga-pv6"; */
+"cku-Ga-pv6.text" = "手机和电脑";
+
+/* Class = "UILabel"; text = "2.5G"; ObjectID = "dAS-WU-ss6"; */
+"dAS-WU-ss6.text" = "2.5G";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "eJo-z3-NnR"; */
+"eJo-z3-NnR.normalTitle" = "取消";
+
+/* Class = "UIButton"; normalTitle = "取消保存"; ObjectID = "fEI-IW-m62"; */
+"fEI-IW-m62.normalTitle" = "取消保存";
+
+/* Class = "UITextField"; text = "半年前的照片"; ObjectID = "fGL-Dm-Ol0"; */
+"fGL-Dm-Ol0.text" = "半年前的照片";
+
+/* Class = "UILabel"; text = "1.jpg"; ObjectID = "fXx-uy-cVU"; */
+"fXx-uy-cVU.text" = "1.jpg";
+
+/* Class = "UILabel"; text = "下载地址：dworkstudio.com"; ObjectID = "fc1-Hx-BeI"; */
+"fc1-Hx-BeI.text" = "下载地址：dworkstudio.com";
+
+/* Class = "UILabel"; text = "按时间 从旧到新"; ObjectID = "gad-4m-EKE"; */
+"gad-4m-EKE.text" = "按时间 从旧到新";
+
+/* Class = "UILabel"; text = "402"; ObjectID = "gfw-Po-haH"; */
+"gfw-Po-haH.text" = "402";
+
+/* Class = "UIButton"; normalTitle = "开始"; ObjectID = "h7w-dy-2CZ"; */
+"h7w-dy-2CZ.normalTitle" = "开始";
+
+/* Class = "UILabel"; text = "5.6GB"; ObjectID = "hgi-Xr-WKF"; */
+"hgi-Xr-WKF.text" = "5.6GB";
+
+/* Class = "UINavigationItem"; title = "导出"; ObjectID = "i02-he-I5t"; */
+"i02-he-I5t.title" = "导出";
+
+/* Class = "UILabel"; text = "导出完成"; ObjectID = "iIj-Yt-FLQ"; */
+"iIj-Yt-FLQ.text" = "导出完成";
+
+/* Class = "UILabel"; text = "4.6"; ObjectID = "iRm-52-vpd"; */
+"iRm-52-vpd.text" = "4.6";
+
+/* Class = "UILabel"; text = "2.2"; ObjectID = "jAz-O9-eYH"; */
+"jAz-O9-eYH.text" = "2.2";
+
+/* Class = "UINavigationItem"; title = "导出"; ObjectID = "jwg-oI-WO2"; */
+"jwg-oI-WO2.title" = "导出";
+
+/* Class = "UILabel"; text = "为我导出"; ObjectID = "lOx-1O-x1Z"; */
+"lOx-1O-x1Z.text" = "为我导出";
+
+/* Class = "UILabel"; text = "关于"; ObjectID = "lm9-FG-sbg"; */
+"lm9-FG-sbg.text" = "关于";
+
+/* Class = "UILabel"; text = "myhouse-wifi"; ObjectID = "n2o-wX-8zF"; */
+"n2o-wX-8zF.text" = "myhouse-wifi";
+
+/* Class = "UINavigationItem"; title = "已导出未清理的照片"; ObjectID = "n63-E2-67n"; */
+"n63-E2-67n.title" = "已导出未清理的照片";
+
+/* Class = "UILabel"; text = "连接出了问题"; ObjectID = "nRb-HH-hqU"; */
+"nRb-HH-hqU.text" = "连接出了问题";
+
+/* Class = "UILabel"; text = " 全选"; ObjectID = "oJ5-Dl-wav"; */
+"oJ5-Dl-wav.text" = " 全选";
+
+/* Class = "UIButton"; normalTitle = "删除(2.0GB)"; ObjectID = "oQe-xw-zDz"; */
+"oQe-xw-zDz.normalTitle" = "删除(2.0GB)";
+
+/* Class = "UILabel"; text = "张"; ObjectID = "phf-dp-SRr"; */
+"phf-dp-SRr.text" = "张";
+
+/* Class = "UIButton"; normalTitle = "取消保存"; ObjectID = "q4n-nS-SCw"; */
+"q4n-nS-SCw.normalTitle" = "取消保存";
+
+/* Class = "UILabel"; text = "Bob-W701"; ObjectID = "rAg-Gi-LFI"; */
+"rAg-Gi-LFI.text" = "Bob-W701";
+
+/* Class = "UILabel"; text = "剩余可用空间："; ObjectID = "s28-ba-1Dh"; */
+"s28-ba-1Dh.text" = "剩余可用空间：";
+
+/* Class = "UILabel"; text = "图片保存在："; ObjectID = "soi-sp-OBU"; */
+"soi-sp-OBU.text" = "图片保存在：";
+
+/* Class = "UILabel"; text = "GB"; ObjectID = "tED-JC-NRQ"; */
+"tED-JC-NRQ.text" = "GB";
+
+/* Class = "UILabel"; text = "的"; ObjectID = "tKz-fQ-Vg9"; */
+"tKz-fQ-Vg9.text" = "的";
+
+/* Class = "UILabel"; text = "的"; ObjectID = "tOV-3W-VPP"; */
+"tOV-3W-VPP.text" = "的";
+
+/* Class = "UIButton"; normalTitle = "返回"; ObjectID = "tbi-1Q-kEx"; */
+"tbi-1Q-kEx.normalTitle" = "返回";
+
+/* Class = "UILabel"; text = "没有照片"; ObjectID = "tc1-lx-Df0"; */
+"tc1-lx-Df0.text" = "没有照片";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vJa-fu-b3z"; */
+"vJa-fu-b3z.text" = "Label";
+
+/* Class = "UILabel"; text = "需同网"; ObjectID = "vgC-h7-4kf"; */
+"vgC-h7-4kf.text" = "需同网";
+
+/* Class = "UILabel"; text = "999/999"; ObjectID = "wji-yK-nvS"; */
+"wji-yK-nvS.text" = "999/999";
+
+/* Class = "UINavigationItem"; title = "未导出的照片"; ObjectID = "xfv-8X-3tP"; */
+"xfv-8X-3tP.title" = "未导出的照片";
+
+/* Class = "UILabel"; text = "Bob-W701"; ObjectID = "ybE-Gr-rgE"; */
+"ybE-Gr-rgE.text" = "Bob-W701";
+
+/* Class = "UIButton"; normalTitle = "再试一次"; ObjectID = "zYI-V3-6GR"; */
+"zYI-V3-6GR.normalTitle" = "再试一次";
+
+/* Class = "UILabel"; text = "好用大家一起用"; ObjectID = "zqS-Kd-OZo"; */
+"zqS-Kd-OZo.text" = "好用大家一起用";

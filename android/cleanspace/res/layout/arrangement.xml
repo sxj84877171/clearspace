@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#2c77d9" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2.5dp"
+            android:background="#00000000"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back_select" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back"
+            android:text="@string/arrange_photo"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/arrage_all_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_layout"
+        android:background="#2c77d9"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/delete_photo_num"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/arrage_all_photo"
+        android:background="#1057b5"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:text="@string/arrange_delete_button_1"
+        android:background="#a00202"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/category_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/delete_button"
+        android:layout_below="@id/delete_photo_num"
+        android:divider="@null" 
+        android:background="#ffffff" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide_pc_list_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hide_pc_list_root_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilink"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/hide_pc_list_pic"
+        android:layout_width="14dp"
+        android:layout_height="7.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/desc"
+        android:gravity="center_vertical"
+        android:src="@drawable/btn_find_hide" />
+
+</LinearLayout>

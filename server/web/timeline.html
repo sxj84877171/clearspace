@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>更新日志 - 照片大挪移</title>
+		<meta name="keywords" content="Lync Master, Phone, PC, ">
+		<meta name="description" content="Lync Master, Phone, PC,">
+		<meta name="author" content="Lync Master">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/timeline.css" rel="stylesheet">
+		<script language="javascript" type="text/javascript">
+			window.moveTo(-4, -4);
+			window.resizeTo(screen.availWidth, screen.availHeight);
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/gotop.js"></script>
+		<script type="text/javascript" src="js/log.js" ></script>
+		<script type="text/javascript" src="js/config.js" ></script>
+		<!--<script>
+(function(){
+	//语言
+	//change_language();
+	var language = navigator.browserLanguage ? navigator.browserLanguage : navigator.language;
+	if(language.indexOf('zh') >= 0)
+	{
+		window.location.href="cn/timeline.html";
+	}
+})();
+</script>-->
+	</head>
+
+	<body>
+		<!--S header-->
+		<div id="top" class="top">
+			<div class="top_com">
+				<div class="logo">
+					<h1>
+                <a href="index.html"><img class="logo_l" src="images/logo_l.png" />照片大挪移</a>
+            </h1>
+				</div>
+				<ul>
+					<li><a href="index.html"  id="">首页</a></li>
+					<li><a class="top_nav_sel" id="">更新日志</a></li>
+					<li><a href="faq.html" id="">FAQ</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--E header-->
+		<div id="tbox">
+			<img id="gotop" src="images/gotop.png">
+		</div>
+
+		<div class="timeline-main" data-find="_9">
+			<div class="update-log-content" data-find="_8">
+				<div class="wrapper" data-find="_7">
+					<hr class="line-right">
+					<div class="main" data-find="_6">
+						<h1 class="title">时光轴</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+				function SetTimeLine() {
+					this.oMain = $('.main');
+				}
+				SetTimeLine.prototype.setTimeLine = function() {
+					var html = '';
+					for (var i = 0; i < arrLog.length; i++) {
+						html += '<div class="month">';
+						html += '<h2><a href="http://xiangfl.com/timeline.html#"><nobr>' + arrLog[i].date + '</nobr><i></i></a></h2>';
+						for (var j = 0; j < arrLog[i].data.length; j++) {
+							html += '<div class="list"><ul style="position: absolute;"><li class="cls">';
+							html += '<p class="date">' + arrLog[i].data[j].time + '</p>';
+							html += '<p class="intro">' + arrLog[i].data[j].title + '</p>';
+							if (arrLog[i].data[j].Android) {
+								html += '<p class="version t_android">' + arrLog[i].data[j].Android + '</p>';
+							}
+							if (arrLog[i].data[j].iOS) {
+								html += '<p class="version t_ios dw_a1">' + arrLog[i].data[j].iOS + '</p>';
+							}
+							if (arrLog[i].data[j].window) {
+								html += '<p class="version t_pc dw_a2">' + arrLog[i].data[j].window + '</p>';
+							}
+							html += '<div class="more">';
+							for (var l = 0; l < arrLog[i].data[j].data.length; l++) {
+								html += arrLog[i].data[j].data[l] + '<br />';
+							}
+							html += '</div></li></ul></div>';
+						}
+						html += '</div>';
+					}
+					this.oMain.append(html);
+				}
+				var oSetTimeLine = new SetTimeLine();
+				oSetTimeLine.setTimeLine();
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				var tmp = $(".main .month");
+				for (i = 0; i < tmp.length; i++) {
+					if (i != 0)
+						$(".main .month").eq(i).toggleClass("close");
+				}
+				$(".main .month .list").each(function(e, t) {
+					var n = $(t),
+						r = n.find("ul");
+					n.height(r.outerHeight()), r.css("position", "absolute")
+				}), $(".main .month>h2>a").click(function(e) {
+					e.preventDefault(), $(this).parents(".month").toggleClass("close")
+				});
+			});
+			
+//			//Download URL
+//$(function(){
+//	
+//	function DownloadInformation()
+//	{
+//		//安卓端
+//		this.oPlayLynked = document.getElementById('dl_play_lynked');
+//		
+//	}
+//	
+//	DownloadInformation.prototype.setUrl = function()
+//	{
+//		//安卓端
+//		this.oPlayLynked.href = play_lynked;
+//	}
+//	
+//	var oDownloadInformation = new DownloadInformation();
+//	oDownloadInformation.setUrl();
+//});
+		</script>
+		
+		<!--footer-->
+		<div id="footer" class="footer">
+	<div class="logo_footer_txt"><div class="logo_footer_img"></div>照片大挪移
+    </div>
+    
+</div>
+	</body>
+
+</html>

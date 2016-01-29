@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- //////////不需要翻译部分的相关说明(该说明不需要翻译)///////// -->
+    <!-- 翻译中,请务必[保留]不需要翻译的"字符"和相关"符号", 参考: (版本):%s 翻译后 (Version):%s -->
+    <!-- 个别提示请参考下面带  "?" 号的备注 -->
+    <!-- 请参考对应语言国家的书写习惯 -->
+    <!-- 请保持当前字符串排列顺序 -->
+    <!-- \n为换行符 -->
+    <!-- [] () 括号  |符号  请保持符号里的词语对应的翻译仍在符号内 -->
+    <!-- %s,%1$s,%2$s,%1$d 均为替换字符,如1: 已删除%1$d张，共%2$d张,替换后 已删除2张，共123张; 如2: 共%1$d张(%2$s),替换后 共10张(21MB) -->
+    <!-- \",\ ,\\前面的\为转义符,使得保留符号原有的意义 -->
+    <!-- ///////////////////////////////////////////////// -->
+
+
+    <!-- //////下面的只需要翻译对应的值部分, 如: 照片大挪移///////// -->
+    <string name="app_name">照片大挪移</string>
+    <string name="link">上次连接的电脑</string>
+    <string name="developer">更新开发版本</string>
+    <string name="committing">正在提交…</string>
+    <string name="nilink">附近的电脑</string>
+    <string name="commint_success">提交成功</string>
+    <string name="commint_fail">提交失败</string>
+    <!-- 照片大挪移 \nVersion:%s -->
+    <string name="about_message">版本:%s</string>
+    <string name="back">返回</string>
+    <string name="commit">提交</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_help">帮助与反馈</string>
+    <string name="feelback">反馈</string>
+    <string name="about">关于</string>
+    <string name="exist">退出</string>
+    <string name="menu_help_reply_tip">请你输入你要填写的宝贵意见！</string>
+    <string name="freespace_of_phone">手机剩余空间:</string>
+    <string name="all_pic_size">照片总大小:</string>
+    <string name="one_month">一个月前的照片</string>
+    <string name="three_month">三个月前的照片</string>
+    <string name="half_year">半年前的照片</string>
+    <string name="one_year">一年前的照片</string>
+    <string name="gongji">共计 </string>
+    <string name="arrange_photo">整理照片</string>
+    <string name="all_photo">所有照片</string>
+    <string name="arrange_delete_button_1">删除(%1$s)</string>
+    <string name="doing">正在处理：</string>
+    <string name="share_for_friends">推荐给好友</string>
+    <string name="share">照片太多,空间不够,怎么办? \"照片大挪移\" 一键帮您轻松搞定!点击下载: http://thelinkit.com/photoclean/update/cleanspace.apk</string>
+    <string name="outpic2pc">选择电脑</string>
+    <string name="start">开始</string>
+    <string name="cancle">取消</string>
+    <string name="ok">完成</string>
+    <string name="Dwpic">张</string>
+    <string name="exportsize">为我导出</string>
+    <string name="export">导出</string>
+    <string name="fast_move">最快腾空间，就用照片大挪移</string>
+    <string name="findyourpc">正在寻找您的电脑</string>
+    <string name="deal_pic_done">处理完成</string>
+    <string name="exportLocation_1">图片保存位置:</string>
+    <string name="last_finishTime">上次清理时间: </string>
+    <string name="offline">(离线)</string>
+    <string name="cast">连接出了点问题…</string>
+    <string name="casterror">连接失败…</string>
+    <string name="device_offline">设备已离线…</string>
+    <string name="connect">正在连接…</string>
+    <string name="has_export">已导出</string>
+    <string name="xphone_download_title">更新照片大挪移</string>
+    <string name="xphone_download_desc1">下载成功,开始安装</string>
+    <string name="xphone_download_desc2">下载失败,请重试</string>
+    <string name="xphone_download_toast">开始下载…</string>
+    <string name="s_smart_mention">提醒</string>
+    <string name="s_smart_confirm">确定</string>
+    <string name="s_update_version_match">已经是最新版本</string>
+    <string name="s_update_get_server_information_failed">获取更新信息失败</string>
+    <string name="s_update_sd_card_unavailable">存储卡无效</string>
+    <string name="s_update_title">新版本</string>
+    <string name="retry">重试</string>
+    <string name="unsave">取消保存</string>
+    <string name="look_and_delete">查看后删除 ></string>
+    <string name="delete_export">删除刚才导出的照片</string>
+    <string name="export_done">您已经成功导出这些照片，</string>
+    <string name="confirm_delete">是否继续删除?</string>
+    <string name="continue_delete">继续删除</string>
+    <string name="delete">正在删除，剩余:%s张</string>
+    <string name="title_activity_clean_photo">照片整理</string>
+    <string name="no_img_found">未找到</string>
+    <string name="clean_and_size">清理(%1$s)</string>
+    <string name="choose_photo_to_be_cleaned">选择要清理的照片</string>
+    <string name="exported_but_nocleaned">已导出未清理的照片</string>
+    <string name="photo_clean_number">共%s张</string>
+    <string name="export_total_info" formatted="false">共%s张 (%s)</string>
+    <string name="clear_title_cur_exported">本次导出的照片</string>
+    <string name="clear_title_cur_exported_">本次导出的照片:%1$s，剩余可用空间:%2$s</string>
+    <string name="clear_tip">你可以在这里删除这些照片</string>
+    <!--已选择%s张 ，长按查看大图 -->
+    <string name="clear_message">已选择%s张</string>
+    <string name="clear_check_text">全部</string>
+    <string name="clear_sort_item1">按时间 从旧到新</string>
+    <string name="clear_sort_item2">按时间 从新到旧</string>
+    <string name="clear_sort_item3">按大小 从大到小</string>
+    <string name="clear_sort_item4">按大小 从小到大</string>
+    <string name="clear_delete_btn">删除(%s)</string>
+    <string name="clear_deleteing" formatted="false">正在删除第%s张，共%s张</string>
+    <!-- 选取需要删除的照片，长按查看大图 -->
+    <string name="clear_need_select_message">选取需要删除的照片</string>
+
+    <!-- export -->
+    <string name="export_title">未导出的照片</string>
+    <string name="export_similar_finding">正在查找相似的照片…</string>
+    <string name="export_similar_message">相似照片</string>
+    <string name="export_no_similar_photo">没有找到相似照片</string>
+    <string name="export_album_photo_message">相册照片</string>
+    <string name="export_analyze_message">正在分析照片</string>
+    <!-- 分析完毕，触击选取需要删除的照片，长按查看大图 -->
+    <string name="export_analyze_finish">分析完毕，触击选取需要删除的照片</string>
+    <string name="export_deleted_size">已删除%s</string>
+    <!-- 选取需要删除的照片(已选择%s张)，长按查看大图 -->
+    <string name="export_select_delete">选取需要删除的照片(已选择%s张)</string>
+    <string name="export_deleted_count" formatted="false">已删除%s张，共%s张</string>
+    <string name="export_delete_finish">选择的照片已全部删除</string>
+    
+     <string name="one_drive_login_desc_3">正在登陆…</string>
+
+    <!-- alert delete dialog -->
+    <string name="alert_delete_title">确信在本地删除这些照片吗？</string>
+    <string name="alert_delete_message">这些照片曾经导出到:</string>
+    <string name="alert_export_location">%s的 桌面\\照片大挪移\\</string>
+    <string name="alert_delete_all_delete">有%s组相似的照片将被全部删除，\n是否继续？</string>
+    <string name="conn_fail">连接似乎有点问题,尝试本地整理?</string>
+    <string name="conn_fail_help_me">好,帮我整理</string>
+    <string name="scan_2">下载地址:</string>
+    <string name="scan_5">当前手机网络:</string>
+    <string name="s1">在[电脑运行]照片大挪移</string>
+    <string name="s2">手机和电脑[需同网]|</string>
+
+    <!-- main -->
+    <string-array name="datasGrade">
+        <item>所有照片</item>
+        <item>一个月前</item>
+        <item>三个月前</item>
+        <item>半年前</item>
+        <item>一年前</item>
+    </string-array>
+
+    <string name="clean_notification_desc">照片占用空间太多? 用照片大挪移帮您腾空间.</string>
+    <string name="clean_notification_desc2">正在导出照片: %s</string>
+    <string name="clean_notification_desc3">导出完成</string>
+    <string name="clean_notification_desc4">空间不足? 试试用照片大挪移帮您腾空间.</string>
+    <string name="notfound">找不到您的电脑?</string>
+    <string name="dialog_update">更新</string>
+    <string name="dialog_newV">有新版本</string>
+    <string name="finish_cur_speed">本次导出平均速度为</string>
+    <string name="finish_des_chijiao">这速度醉了！您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_des_moca">噢噢！您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_des_yongjiu">您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_des_yadong">还可以啊！您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_des_sangtana">很快啊！您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_des_boying">太快了！您的速度击败了全球%1$s的用户，\n特此授予您%2$s称号！</string>
+    <string name="finish_name_chijiao">赤脚大仙</string>
+    <string name="finish_name_moca">摩擦摩擦滑板鞋</string>
+    <string name="finish_name_yongjiu">永久28自行车</string>
+    <string name="finish_name_yadong">雅迪电动车</string>
+    <string name="finish_name_sangta">桑塔纳2000</string>
+    <string name="finish_name_xialipu">夏利旗舰版</string>
+    <string name="finish_name_falali">法拉利</string>
+    <string name="finish_name_boying">波音飞机</string>
+    <string name="finish_name_changzheng">长征号火箭</string>
+    <string name="finish_name_yuzhou">宇宙飞船</string>
+    <string name="finish_export_total">总导出数量：</string>
+    <string name="finish_export_total_rank">全球排名：</string>
+    <string name="finish_export_total_size">总导出大小：</string>
+
+    <string name="one_drive_login_desc">上传照片到云端，请登录</string>
+    <string name="one_drive_login_desc_2">登录已失效，请重新登录</string>
+    <string name="drive_login">%1$s已登录</string>
+    <string name="drive_login_button">登录</string>
+    <string name="drive_logout_button">退出登录</string>
+    
+    <!-- ? //////////////////////////下面部分不需要翻译!////////////////////////////// -->
+
+    <string name="location">Bob-W701 DeskTop\\CleanSpace\\</string>
+    <string name="exported_name">Tim-tomorrow</string>
+    <string name="example_1">0.0</string>
+    <string name="example_2">0</string>
+    <string name="scan_6">dworkstudio.com</string>
+    <string name="zGBite">0.5GB</string>
+    <string name="oneGBite">1.0GB</string>
+    <string name="towGBite">2.0GB</string>
+    <string name="fourGBite">4.0GB</string>
+    <string name="eightGBite">8.0GB</string>
+    <string name="Dwsize_kb">KB</string>
+    <string name="Dwsize_mb">MB</string>
+    <string name="Dwsize">GB</string>
+    <string name="Dwsize_kb_speed">KB/S</string>
+    <string name="Dwsize_mb_speed">MB/S</string>
+    <string name="Dwsize_b_speed">B/S</string>
+    <string name="v">v%s</string>
+    <string name="export_size">已腾空间</string>
+    <string name="desc">描述</string>
+    <string name="menu1">好用大家一起用</string>
+    <string name="menu2">开发爱吐槽</string>
+    <string name="developer_close">开发者模式已关闭</string>
+    <string name="developer_open">开发者模式已开启</string>
+    <string name="xie_gang">/</string>
+
+</resources>

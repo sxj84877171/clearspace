@@ -1,0 +1,203 @@
+﻿<Window x:Class="ClearSpace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:WMControl="clr-namespace:WMControl;assembly=WMControl" 
+        xmlns:gifLib="clr-namespace:GifImageLib;assembly=GifImageLib"
+        xmlns:prop="clr-namespace:ClearSpace.Properties"
+        xmlns:thumbs="clr-namespace:ThumbsExplorer"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Style="{StaticResource for_shadow_window}" MouseLeftButtonDown="Win_MouseLeftButtonDown"
+        Title="{x:Static prop:Resources.CLEANSPACE_APPNAME}" Height="554" Width="364" Closing="Window_Closed" Activated="Window_Activated_1" StateChanged="Window_StateChanged_1">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/MyScrollBar.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#2c77d9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
+            <RowDefinition Height="19"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="380"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" >
+            <Image Source="images/logo_title.png"  Stretch="None" Width="18" Height="18" Margin="8,0,0,0" MouseUp="Image_MouseUp_1" ></Image>
+            <TextBlock Text="{x:Static prop:Resources.CLEANSPACE_APPNAME}"  FontSize="14" Foreground="#ffffff" VerticalAlignment="Center" Margin="3,0,0,0"/>
+            <TextBlock Name="VersionInfo" Text="(v1.1.5)"  FontSize="10" Foreground="#ffffff" VerticalAlignment="Center" Margin="5,2,0,0"/>
+            <DockPanel HorizontalAlignment="Right">
+                <WMControl:WMButton x:Name="Min_Btn"  Width="30" Height="30"  Click="Min_Btn_Click" >
+                    <WMControl:WMButton.Background>
+                        <ImageBrush ImageSource="images/min_normal.png" />
+                    </WMControl:WMButton.Background>
+                    <WMControl:WMButton.MyMoverBrush>
+                        <ImageBrush ImageSource="images/min_hover.png"/>
+                    </WMControl:WMButton.MyMoverBrush>
+                    <WMControl:WMButton.MyEnterBrush>
+                        <ImageBrush ImageSource="images/min_pressed.png"/>
+                    </WMControl:WMButton.MyEnterBrush>
+                </WMControl:WMButton>
+                <WMControl:WMButton x:Name="Close_Btn"  Width="30" Height="30"  Click="Close_Btn_Click" >
+                    <WMControl:WMButton.Background>
+                        <ImageBrush ImageSource="images/close_normal.png" />
+                    </WMControl:WMButton.Background>
+                    <WMControl:WMButton.MyMoverBrush>
+                        <ImageBrush ImageSource="images/close_hover.png"/>
+                    </WMControl:WMButton.MyMoverBrush>
+                    <WMControl:WMButton.MyEnterBrush>
+                        <ImageBrush ImageSource="images/close_pressed.png"/>
+                    </WMControl:WMButton.MyEnterBrush>
+                </WMControl:WMButton>
+            </DockPanel>
+        </DockPanel>
+        <Border Grid.Row="1" Height="1" Width="360" Background="#2c77d9" />
+        
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-5,0,0">
+            <Image Source="images/img_computer.png" Width="87" Height="68" Margin="0,0,0,0"></Image>
+            <Canvas>
+                <TextBlock Name="RecieveStatus" Height="20" Width="83" Margin="-87,24,0,0" Foreground="#ffffff" TextAlignment="Center" Text="{x:Static prop:Resources.CS_PC_READY}"></TextBlock>
+            </Canvas>
+            <StackPanel VerticalAlignment="Center">
+                <StackPanel Name="NoConnIndicator" Height="45" Orientation="Horizontal" Visibility="Visible">
+                    <Image Source="images/connect_not.png" Width="139" Height="1" Margin="10,0,10,0" ></Image>
+                    <Image Source="images/icon_connect_not.png" Width="14" Height="14" Margin="-160,0,0,0"></Image>
+                </StackPanel>
+                <StackPanel Name="ConnectedIndicator" Height="45" Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,0,0" Visibility="Collapsed">
+                    <StackPanel  VerticalAlignment="Center" Margin="0,6,0,0">
+                        <Canvas Name="ThumbnailCanvas" Width="40" Height="40" Background="#ccc" Visibility="Collapsed"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Name="Thumbnail" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Canvas>
+                        <StackPanel Name="ProgressIndicator" Visibility="Visible">
+                            <TextBlock Name="text_TransState" FontSize="12" TextAlignment="Center" Width="139"  Foreground="#ffffff" Text="{x:Static prop:Resources.CLEANSPACE_TRANSFER_STATUS}" ></TextBlock>
+                        </StackPanel>
+                        <StackPanel Name="TransferCompletedIndicator" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Margin="0,0,0,0">
+                            <Image Source="images/icon_finish.png"></Image>
+                            <TextBlock FontSize="12"  Text="{x:Static prop:Resources.CS_TRANS_COMPLETE_STATUS}" Foreground="#ffffff" Margin="3,0,0,0"></TextBlock>
+                        </StackPanel>
+                        <StackPanel VerticalAlignment="Center">
+                            <Image Source="images/connect_yes.png" Width="139" Height="1" Margin="10,0,10,0" ></Image>
+                            <TextBlock Name="text_TransState1" TextAlignment="Center" Width="139"  FontSize="12" Foreground="#ffffff" Text="{x:Static prop:Resources.CLEANSPACE_TRANSFER_STATUS2}"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                   
+                </StackPanel>
+            </StackPanel>
+
+            <gifLib:GifImage Name="PhoneImgGif" Source="images/img_phone_blue.gif" Width="36" Height="66" Stretch="Uniform"/>
+            <Image Name="PhoneImg" Source="images/img_phone_white.png" Width="36" Height="66" Visibility="Collapsed"></Image>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Height="32" Grid.Row="3" VerticalAlignment="Bottom" Margin="0,-5,0,0">
+            <TextBlock Name="text_ComputerName" FontSize="12" Foreground="#ffffff" TextAlignment="Center" VerticalAlignment="Center" Text="{x:Static prop:Resources.CS_NOUN_COMPUTER}" Width="160" ></TextBlock>
+            <TextBlock Name="text_PhoneName" FontSize="12" Foreground="#ffffff" TextAlignment="Center"  VerticalAlignment="Center" Text="{x:Static prop:Resources.CS_PLS_WORK_ON_PHONE}" Width="110" TextWrapping="WrapWithOverflow" Margin="85,0,0,0"></TextBlock>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="4">
+            <StackPanel Name="NoConnCover" Height="380" Width="360" Visibility="Visible" Background="#ffffff">
+                <TextBlock Text="{x:Static prop:Resources.CS_SCAN_QR_CODE_DOWNLOAD1}" FontSize="14" Foreground="#333333" TextAlignment="Center" Margin="0,45,0,0"/>
+                <TextBlock Text="{x:Static prop:Resources.CS_SCAN_QR_CODE_DOWNLOAD2}" FontSize="14" FontWeight="Bold" Foreground="#333333" TextAlignment="Center" Margin="0,0,0,0"/>
+                <Image Height="180" Width="180" Source="./images/img_qrcode.png" Margin="0,15,0,0"/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,28,0,0">
+                    <TextBlock FontSize="14" Foreground="#333333" TextAlignment="Center"   Text="{x:Static prop:Resources.CS_PlSCONNFROMMOBILE}"/>
+                    <TextBlock Name="OfficialWebsite" FontSize="20" Foreground="#333333" TextAlignment="Center" Text="{x:Static prop:Resources.CS_NOUN_COMPUTER}" /><!-- MouseEnter="OpenFile_MouseEnter" MouseLeave="OpenFile_MouseLeave" MouseLeftButtonUp="OpenFile_Click"-->
+                </StackPanel>
+                
+            </StackPanel>
+            <ListView Name="ImgBrowserView" ItemsSource="{Binding DateGroupedThumbsList}"   Height="380" Width="360" HorizontalAlignment="Left" BorderThickness="0" 
+                     VerticalAlignment="Top" ScrollViewer.CanContentScroll="False" Visibility="Collapsed">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Focusable" Value="false"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListViewItem">
+                                    <Border x:Name="border" Background="Transparent">
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="CommonStates">
+                                                <VisualState x:Name="Normal" />
+                                                <VisualState x:Name="Disabled" />
+                                                <VisualState Name="MouseOver">
+                                                    <Storyboard>
+                                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="border"
+                                                            Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                                            <EasingColorKeyFrame KeyTime="0" Value="#ffffff" />
+                                                        </ColorAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                        <ContentPresenter/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" >
+                            <StackPanel Orientation="Horizontal" Margin="7,5,0,-2" >
+                                <TextBlock Text="{Binding ImgGroupDate}"  Foreground="#888888" Width="80" TextAlignment="Left" FontSize="12"></TextBlock>
+                                <Border Width="213" Height="1" Background="#cccccc" > </Border>
+                                <TextBlock Text="{Binding ImgCount}" Foreground="#888888" Width="35" TextAlignment="Right" FontSize="12"></TextBlock>
+                                <TextBlock Text="张" Foreground="#888888" FontSize="12"></TextBlock>
+                            </StackPanel>
+                            <ListView ItemsSource="{Binding ThumbsList}">
+                                <ListView.View>
+                                    <thumbs:ThumbView/>
+                                </ListView.View>
+                            </ListView>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Canvas Name="UpdatePanel" Height="50" Margin="0,-50,0,0" Background="#2b87ff" Visibility="Hidden">
+                <StackPanel Height="50"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <TextBlock FontSize="14" Margin="20,0,0,0" Width="180" Foreground="White" Text="{x:Static prop:Resources.CS_NEW_VER_AVAILABLE}" VerticalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+                    <WMControl:WMButton Width="70" Height="25" Content="{x:Static prop:Resources.CS_YES}" Foreground="#ffffff"  Click="UpdateYes_Click" >
+                        <WMControl:WMButton.Background>
+                            <ImageBrush ImageSource="images/btn_break_normal.png" />
+                        </WMControl:WMButton.Background>
+                        <WMControl:WMButton.MyMoverBrush>
+                            <ImageBrush ImageSource="images/btn_break_hover.png"/>
+                        </WMControl:WMButton.MyMoverBrush>
+                        <WMControl:WMButton.MyEnterBrush>
+                            <ImageBrush ImageSource="images/btn_break_pressed.png"/>
+                        </WMControl:WMButton.MyEnterBrush>
+                    </WMControl:WMButton>
+                    <WMControl:WMButton Width="70" Height="25" Content="{x:Static prop:Resources.CS_NO}" Foreground="#ffffff" Margin="10,0,0,0"  Click="UpdateNo_Click" >
+                        <WMControl:WMButton.Background>
+                            <ImageBrush ImageSource="images/btn_break_normal.png" />
+                        </WMControl:WMButton.Background>
+                        <WMControl:WMButton.MyMoverBrush>
+                            <ImageBrush ImageSource="images/btn_break_hover.png"/>
+                        </WMControl:WMButton.MyMoverBrush>
+                        <WMControl:WMButton.MyEnterBrush>
+                            <ImageBrush ImageSource="images/btn_break_pressed.png"/>
+                        </WMControl:WMButton.MyEnterBrush>
+                    </WMControl:WMButton>
+                </StackPanel>
+            </Canvas>
+            
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="5" VerticalAlignment="Center">
+            <Canvas>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="8,2,0,0">
+                    <Image Name="wifiIcon" Width="16" Height="13" Source="./images/connect_wifi.png" Visibility="Collapsed"></Image>
+                    <Image Name="lineIcon" Width="16" Height="13" Source="./images/connect_line.png" Visibility="Collapsed"></Image>
+                    <TextBlock Name="Cur_Network" FontSize="10" Foreground="#ffffff" TextAlignment="Left" Text="{x:Static prop:Resources.CS_CURRENT_NETWORK}" Width="Auto" Margin="3,0,0,0" Visibility="Visible" ></TextBlock>
+                </StackPanel>
+            </Canvas>
+            <!--<StackPanel Name="UpdatePanel" Width="263" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="8,2,0,0" Background="#2c77d9" Visibility="Hidden">
+                <TextBlock FontSize="10" Foreground="Red" Text="{x:Static prop:Resources.CS_NEW_VER_AVAILABLE}"></TextBlock>
+                <Button Content="{x:Static prop:Resources.CS_YES}" Height="15" Width="30" FontSize="10" Margin="5,0,0,0" Click="UpdateYes_Click"></Button>
+                <Button Content="{x:Static prop:Resources.CS_NO}" Height="15" Width="30" FontSize="10" Margin="5,0,0,0" Click="UpdateNo_Click"></Button>
+            </StackPanel>-->
+            <TextBlock Name="OpenFileBtn" DockPanel.Dock="Right"  FontSize="10" Foreground="#ffed22" TextAlignment="Right" Width="110"  Margin="240,2,0,0"  Text="{x:Static prop:Resources.CLEANAPACE_OPENPHOTOFOLDER}" MouseEnter="OpenFile_MouseEnter" MouseLeave="OpenFile_MouseLeave" MouseLeftButtonUp="OpenFile_Click"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

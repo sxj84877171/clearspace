@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pc_height_up">125dp</dimen>
+    <dimen name="pc_height_down">25dp</dimen>
+    
+    <string-array name="video_files">        
+        <item>amv</item>
+        <item>asf</item>  
+        <item>avi</item>
+        <item>bik</item> 
+        <item>csf</item>
+        <item>dat</item>  
+        <item>divx</item> 
+        <item>evo</item>    
+        <item>flash</item>
+        <item>flv</item>
+        <item>f4v</item>
+        <item>hlv</item>        
+        <item>mkv</item>
+        <item>mod</item>
+        <item>mov</item>        
+        <item>mpe</item>
+        <item>mpeg</item>
+        <item>mpeg1</item>
+        <item>mpeg2</item>
+        <item>mpeg4</item>
+        <item>mpg</item>
+        <item>mp4</item>
+        <item>mpv2</item>
+        <item>mts</item>
+        <item>m1v</item>
+        <item>m2v</item>
+        <item>m2p</item>
+        <item>m2pv</item>
+        <item>m2ts</item>
+        <item>m4b</item>
+        <item>m4p</item>
+        <item>m4v</item>
+        <item>mpm</item>
+        <item>ogm</item>
+        <item>ogv</item>
+        <item>ogx</item>
+        <item>pss</item>
+        <item>pva</item>
+        <item>pmp</item>
+        <item>qt</item>
+        <item>ram</item>
+        <item>rm</item>    
+        <item>rmvb</item>
+        <item>rp</item>
+        <item>rpm</item>
+        <item>rt</item>
+        <item>smil</item>
+        <item>scm</item>
+        <item>swf</item>
+        <item>tp</item>
+        <item>tpr</item>
+        <item>ts</item>
+        <item>vp6</item>
+        <item>wm</item>        
+        <item>wmp</item>
+        <item>wmv</item>
+        <item>xlmv</item>
+        <item>xv</item>
+        <item>xvx</item>
+        <item>3gp</item>
+        <item>3gp2</item>
+        <item>3gp4</item>
+        <item>3g2</item>
+    </string-array>
+
+</resources>

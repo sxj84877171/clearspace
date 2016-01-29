@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96c3ff"
+    android:orientation="vertical"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/export_title_background" >
+
+        <LinearLayout
+            android:id="@+id/topBackBtnPanel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:src="@drawable/icon_title_select" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_activity_clean_photo"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topBackBtnPanel"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/photo_clean_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/photo_clean_size_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/photo_clean_size"
+                android:text="MB"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/photo_clean_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/photo_clean_size"
+                android:textColor="#c9e9ff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#0e4ea4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/choose_photo_to_be_cleaned"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp" >
+
+            <ImageView
+                android:id="@+id/exported_icon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.5dp"
+                android:src="@drawable/icon_image_green" />
+
+            <TextView
+                android:id="@+id/notCleanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/exported_icon"
+                android:maxWidth="145dp"
+                android:text="@string/exported_but_nocleaned"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/CleanedPhotoNoFileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:maxWidth="100dp"
+                android:text="@string/no_img_found"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/startCleanedPhotoBtn"
+                android:layout_width="28.5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4.5dp"
+                android:background="@drawable/btn_next_select"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/CleanedPhotoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/startCleanedPhotoBtn"
+                android:text="@string/clean_and_size"
+                android:textColor="#2c77d9"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exportedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <GridView
+                android:id="@+id/gridview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="7dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp" >
+
+            <ImageView
+                android:id="@+id/unexport_icon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.5dp"
+                android:src="@drawable/icon_image_blue" />
+
+            <TextView
+                android:id="@+id/unExportText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/unexport_icon"
+                android:maxWidth="145dp"
+                android:text="@string/export_title"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/unCleanPhotoNoFileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:maxWidth="100dp"
+                android:text="@string/no_img_found"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/startUnCleanPhotoBtn"
+                android:layout_width="28.5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4.5dp"
+                android:background="@drawable/btn_next_select"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unCleanPhotoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/startUnCleanPhotoBtn"
+                android:text="@string/clean_and_size"
+                android:textColor="#2c77d9"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/UnexportedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <GridView
+                android:id="@+id/gridview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="7dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_back_action"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

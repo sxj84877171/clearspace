@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tag_title"
+    android:layout_centerHorizontal="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#10ffffff" >
+
+        <ImageView
+            android:id="@+id/connect_pc_icon"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/icon_computer_white" />
+
+        <TextView
+            android:id="@+id/PCName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/connect_pc_icon"
+            android:text="Lenovo-pc"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cast_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/PC_Pic"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="37dp"
+            android:text="@string/connect"
+            android:textColor="#90ffffff"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/retry"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/scan_retry_selector"
+            android:gravity="center"
+            android:text="@string/retry"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/loading"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:max="200"
+            android:progressDrawable="@drawable/progressbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/clean_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/scan_clean_selector"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:text="@string/conn_fail"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/conn_fail_help_me"
+            android:textColor="#fff000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>
